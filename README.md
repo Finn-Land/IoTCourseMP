@@ -1,8 +1,7 @@
-# IoTCourseMP
+# IoTCourseMP Combined repository of Finn, Johannes, Vincent, Stephan and Judit
 Repo for the IoT course, groupname: Magnus Perfectus
-# Combined repository of Finn, Johannes, Vincent, Stephan and Judit
-
-In this repo there are three different portfolios. One for each student.
+ 
+In this repo there are five different portfolios. One for each student.
 
 ## Finn (student ID (?))
 [Finn](/Finn/README.md)

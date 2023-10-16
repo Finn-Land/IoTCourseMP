@@ -2,6 +2,11 @@
 My portfolio 
 
 ## First day
+- [Research records](/Judit/researches/research01/README.md)
+
+- [Lab records](/Teamfolder/exercises/Group1/exercise01/README.md)
+
+- [Reflection](/Lind/reflections/reflection01/README.md)
 
 ## Second day
 
