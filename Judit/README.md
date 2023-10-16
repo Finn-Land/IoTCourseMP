@@ -6,7 +6,7 @@ My portfolio
 
 - [Lab records](/Teamfolder/exercises/Group1/exercise01/README.md)
 
-- [Reflection](/Lind/reflections/reflection01/README.md)
+- [Reflection](/Judit/reflections/reflection01/README.md)
 
 ## Second day
 
