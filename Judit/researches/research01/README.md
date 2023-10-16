@@ -33,48 +33,48 @@ Understanding at least the basics
 Refers to the intercommunication of everyday objects, devices, and appliances to the internet, which allows them to exchange data.
 
 ### Domains
-o	Smart House 
-o	M2M Communication 
-o	Wearable devices
-o	Healthcare
-o	Smart Cars
-o	Industrial Automation
-o	Agriculture
-o	Supply Chain and Logistics
-o	Communication
-o	Monitoring
-o	Transportation
-o	Communication
+- Smart House 
+- M2M Communication 
+- Wearable devices
+- Healthcare
+- Smart Cars
+- Industrial Automation
+- Agriculture
+- Supply Chain and Logistics
+- Communication
+- Monitoring
+- Transportation
+- Communication
 
 ### Commonly used (data) protocols
-o	HTTP
-o	HTTPS
-o	AMQP
-o	WEB SOCKET
-o	NFC
+- HTTP
+- HTTPS
+- AMQP
+- WEB SOCKET
+- NFC
 
 ### Typical devices
-o	Arduino
-o	Raspberry Pi
-o	Smart Watch
-o	Smart Oven
-o	Smart Fridge
-o	Smart Grasshopper
-o	Smart Cars
-o	Smart thermostat
-o	Smart Phone
-o	Roomba
+- Arduino
+- Raspberry Pi
+- Smart Watch
+- Smart Oven
+- Smart Fridge
+- Smart Grasshopper
+- Smart Cars
+- Smart thermostat
+- Smart Phone
+- Roomba
 
 ### What are the benefits of IoT?
-o	Real time access to information
-o	Predictive maintenance
-o	Time saving
-o	Devices interconnected
+- Real time access to information
+- Predictive maintenance
+- Time saving
+- Devices interconnected
 
 ### What are the challenges?
-o	Devices redundancy
-o	Data Security and privacy
-o	Compatibility
-o	Higher energy usage
+- Devices redundancy
+- Data Security and privacy
+- Compatibility
+- Higher energy usage
 
 
