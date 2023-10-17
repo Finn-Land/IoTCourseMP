@@ -1,8 +1,8 @@
 # Reflections
 
-## week 1
+## Week 1
 
-### day 1
+### Day 1
 
 #### Lecture reflection
 The first day has been hard. It has been a lot of time in class trying to keep up with things I don't have a clue about. 
@@ -24,5 +24,9 @@ Also, I have learned that "#define" works better to define the component and its
 
 Another thing I have learned is that you can use "Tinkercad" from Autodesk to try out your code and connections beforehand.
 
+
+You can find the codes of our activities on the Pictures Folder:
+[Codes](/Teamfolder/Group1/exercises//exercise01/)
+
 You can find pictures of our activities on the Pictures Folder:
-[Pictures](/Judit/pictures/)
+[Pictures](/Teamfolder/Group1/pictures/exercise01/)

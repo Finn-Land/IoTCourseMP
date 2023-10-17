@@ -1,14 +1,19 @@
-# Portfolio of Judit (example!)
+# Portfolio of Judit
 My portfolio 
 
 ## First day
 - [Research records](/Judit/researches/research01/README.md)
 
-- [Lab records](/Teamfolder/exercises/Group1/exercise01/README.md)
+- [Lab records](/Teamfolder/Group1/exercises/exercise01/README.md)
 
 - [Reflection](/Judit/reflections/reflection01/README.md)
 
 ## Second day
+- [Research records](/Judit/researches/research02/README.md)
+
+- [Lab records](/Teamfolder/Group1/exercises/exercise02/README.md)
+
+- [Reflection](/Judit/reflections/reflection02/README.md)
 
 ## Third day
 
