@@ -101,6 +101,8 @@ As you have only one Wemos per group, do this task in both sub-pairs with the sa
     6. Compile and flash -> enjoy
       - Video will be provided at the end of the document.
 
+The Video will be in another ZIP file     
+
 ## Toggle led with button
 Stefan and I went to work to tackle the last set of challenges. This one was really difficult, because it require a technic called debouncing. The way to explain deboucing is that the button reacts to quickly. If you hold the button, the button will think it as if it was pressed very quickly, repeatedly. 
 
@@ -197,6 +199,12 @@ buttonState = digitalRead(Button);
 The one with debouncing is a lot clearer and is fool proof, while the second one is easier but can sometimes brake. 
 
 This challenge was really diffult because i didn't know how to use debouncing. I needed to relearn from courses i did in the past, on how to use debouncing.
+
+Proof that we made this is here:
+
+![Challenge D, part one](First_challenge.jpg)
+Futhermore there will be a video in the ZIP with more prove that we did the challenge. 
+
 
 ## Feedback
 
