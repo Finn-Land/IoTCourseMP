@@ -1,0 +1,25 @@
+@startuml
+
+
+[Nodes]
+[Things]
+
+cloud {
+    [Gateway]
+    [Edge]
+    [Fog]
+}
+
+cloud {
+    [Internet]    
+}
+
+cloud {
+    [Cloud]    
+}
+
+[Things] --> [Nodes] 
+[Nodes] --> [Gateway]
+[Gateway] --> [Internet]
+[Internet] --> [Cloud]
+@enduml
