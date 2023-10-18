@@ -4,3 +4,6 @@ The first lecture of this module was the introduction to IoT. Having worked with
 
 ## Lab reflection
 The lab exercises on this day were relatively easy for the most part. I set up the GIT repository for my team, and explained to them how they can use the basics of GIT.
+//Arduino Blink
+//Arduino button LED
+//Arduino toggle button LED

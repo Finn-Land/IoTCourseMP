@@ -16,4 +16,14 @@ YAML is a human-readable and easily writable data serialization format. It's les
 Binary Data Format:
 Binary formats can be highly efficient for transmitting large amounts of data in IoT. They are compact and can significantly reduce bandwidth usage. However, they are not human-readable, which can make debugging and understanding the data more challenging.
 
+--Write about MQTT basics
+
+CLI command: iot
+MQTT + TAB to see all options
+mqtt_listen sandbox/test
+mqtt_send sandbox/test Hello World
+"/sanbox" will disrupts the hierarchy and just listens on ip/sanbox. This is only done when using the "/" in front of the topic
+mqtt_action is used to react on messages
+mqtt_action sandbox payload on mqtt_send sandbox/switch01
+
 ## Lab reflection
