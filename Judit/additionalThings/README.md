@@ -3,6 +3,8 @@
 ## Helping us
 - Finn:
     - Thanks for the patience and thank you for pairing up with me.
+    - Thanks for taking the time to explain the concepts to me.
+
 
 
 ## Helping others

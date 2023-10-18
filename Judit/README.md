@@ -16,6 +16,11 @@ My portfolio
 - [Reflection](/Judit/reflections/reflection02/README.md)
 
 ## Third day
+- [Research records](/Judit/researches/research03/README.md)
+
+- [Lab records](/Teamfolder/Group1/exercises/exercise03/README.md)
+
+- [Reflection](/Judit/reflections/reflection03/README.md)
 
 ## Fourth day
 
