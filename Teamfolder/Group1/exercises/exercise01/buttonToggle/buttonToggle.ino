@@ -9,6 +9,7 @@ int ledState;
 int counter = 0;
 void setup()
 {
+  Serial.begin(115200);
   pinMode(LED1, OUTPUT);
   pinMode(LED2, OUTPUT);
   pinMode(BUTTON, INPUT_PULLUP);
@@ -23,17 +24,13 @@ void loop() {
     Serial.print("The button is pressed: ");
   
     // toggle state of LED
-    if(ledState == LOW) {
-       ledState = HIGH;  
+    if(currentButtonState == LOW) {
+       currentButtonState = HIGH;  
        Serial.println("Turning LED on");
     }
     else {
-      ledState = LOW;
+      currentButtonState = LOW;
       Serial.println("Turning LED off");
-    }
- 
-    // control LED arccoding to the toggled state
-    digitalWrite(LED1, ledState);  //turns the LED on or off based on the variable
-   digitalWrite(LED2, ledState);  
+    } 
   }
 }

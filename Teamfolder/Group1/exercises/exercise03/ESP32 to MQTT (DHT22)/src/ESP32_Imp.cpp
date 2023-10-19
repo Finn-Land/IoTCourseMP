@@ -25,7 +25,8 @@ void ESP32_Imp::setupMQTT(char *broker, int port)
 {
     mqttClient.setServer(broker, port);
     // mqttClient.setCallback(mqttCallback);
-    mqttClient.connect("ESP32Client");
+    mqttClient.connect("FOINTBOINT");
+    mqttClient.subscribe("magnusp/discord_led_control");
 }
 
 void ESP32_Imp::reconnect()
@@ -35,10 +36,10 @@ void ESP32_Imp::reconnect()
     {
         Serial.println("Attempting MQTT connection...");
         // Attempt to connect, with client id
-        if (mqttClient.connect("ESP32Client"))
+        if (mqttClient.connect("FOINTBOINT"))
         {
             Serial.println("Connected to MQTT");
-            mqttClient.subscribe("magnusp/DHTtemp");
+            mqttClient.subscribe("magnusp/discord_led_control");
         }
         else
         {
@@ -74,7 +75,35 @@ void ESP32_Imp::readAndSendData(char *topic)
     */
     char msg[MSG_BUFFER_SIZE];
     float tempVal = dht.readTemperature();
-    snprintf (msg, MSG_BUFFER_SIZE, "%f", tempVal);
+    snprintf(msg, MSG_BUFFER_SIZE, "%f", tempVal);
 
     sendMessage(topic, msg);
+}
+
+void ESP32_Imp::readButton()
+{
+    lastButtonState = currentButtonState;
+    currentButtonState = digitalRead(BUTTON);
+    if (lastButtonState == HIGH && currentButtonState == LOW)
+    {
+        delay(50);
+        if (lastButtonState == HIGH && currentButtonState == LOW)
+        {
+            char msg[MSG_BUFFER_SIZE];
+            if (buttonState == LOW)
+            {
+                buttonState = HIGH;
+                int temp = 1;
+                sprintf(msg, "%d", temp);
+                sendMessage("magnusp/emergency_button", msg);
+            }
+            else
+            {
+                int temp = 0;
+                buttonState = LOW;
+                sprintf(msg, "%d", temp);
+                sendMessage("magnusp/emergency_button", msg);
+            }
+        }
+    }
 }
