@@ -1,4 +1,4 @@
-# Exercise 01
+# Exercise 03
 For the first exercise we wrote three small Arduino programs.
 
 ## Overview

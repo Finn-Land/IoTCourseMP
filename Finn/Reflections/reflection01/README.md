@@ -4,6 +4,12 @@ The first lecture of this module was the introduction to IoT. Having worked with
 
 ## Lab reflection
 The lab exercises on this day were relatively easy for the most part. I set up the GIT repository for my team, and explained to them how they can use the basics of GIT.
-//Arduino Blink
-//Arduino button LED
-//Arduino toggle button LED
+
+**Arduino Blink:**
+In order to blink the Arduino we used the example code from Arduino. This blinks the LED with a blocking delay.
+
+**Arduino button LED:**
+Second assignment was to create a program that would read button input and turn on an LED while holding the button.
+
+**Arduino toggle button LED:**
+The third and final assignment was to create a toggle button for an LED. So we created a program that remembered the last button state, this makes sure that once the button is released the LED stays on. And turns off when the button is pressed again  

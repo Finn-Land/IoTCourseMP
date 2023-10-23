@@ -69,7 +69,7 @@ void loop()
   curTime = millis();
   if (curTime - prevTime > 2000)
   {
-    // esp32.readAndSendData("magnusp/DHTtemp");
+    //esp32.readAndSendData("magnusp/DHTtemp");
     prevTime = curTime;
   }
 }
