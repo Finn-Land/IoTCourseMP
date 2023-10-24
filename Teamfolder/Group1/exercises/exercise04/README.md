@@ -53,32 +53,10 @@ We faced some problems like not being able to properly link the discord bot to n
 5. Check if it works properly
 
 ### Simulation Flow
-Here you can find the compact JSON code to import the flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise04/node-red-basics/Simulation-flow.txt)
-
-### Pictures
-Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise04/node-red-basic/)
-
-## Emergency Button
-We started by creating a Discord Bot (named Judith&Finn BOT). After that we went to node-red and created the flow, making sure to properly set the discord nodes and linking them to our bot.
-
-Then we created the code for the button. In this code we publish every time we click the button. We used the toggle code that we had from before and implemented that into the existing esp32 code. 
-
-We faced some problems like not being able to properly link the discord bot to node-red, but thanks to Jan we solved it out. Also faced some issues with versions of the node.js library, but that was eventuall fixed.
-
-### How to begin
-
-1. Create a bot
-2. Install in node-red the library for discord
-3. Create the flow in node-red
-4. Create code in visual studio for the button
-5. Check if it works properly
-
-### Simulation Flow
-Here you can find the compact JSON code to import the flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise04/emergency-button/)
+Here you can find the compact JSON code to import the flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise04/emergency_button/Simulation-flow.txt)
 
 ### Code
-Here you can find the visual studio code -> [Code](/Teamfolder/Group1/exercises/exercise04/emergency-button/)
-
+Here you can find the visual studio code -> [Code](/Teamfolder/Group1/exercises/exercise04/emergency_button/ESP32%20to%20MQTT%20(DHT22)/)
 
 ### Pictures
 Here you can find some pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise04/emergency-button/)

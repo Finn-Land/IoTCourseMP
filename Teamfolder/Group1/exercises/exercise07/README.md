@@ -73,3 +73,37 @@ Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercis
 
 ### Pictures
 Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise06/)
+
+## Project 1
+In this activity, we need to build an access control system using the previous activities. We need an RFID reader, three LEDs, the buzzer, the display and a relay with the solenoid drawer lock. 
+
+We need to show the access status on the LEDs. When access is granted, green light is on  and lock open (locking again after a short time). When access is denied, red light and nasty noise.
+
+In order to do that, we wire the three LEDs we have been given to the Wemos D1. 
+
+Then we created a new node called "GROUP PROJECT". There, we modify the setup.cpp
+file, adding:
+
+	mfrc522(reader);
+	led(green, 32, "on", "off");
+	led(red, 27, "on", "off");
+	led(yellow, 25, "on", "off");
+
+We then flashed the Wemos D1.
+
+On the same time, the other part of the group wired the RFID reader to the Wemos D1 Mini. 
+
+After that, we created a node-red flow.
+### How to begin
+1. Wire components
+2. Modify setup.cpp
+3. Flash Wemos D1
+4. Create node-red flow
+5. Check if it works
+
+### Simulation Flow
+Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise06/)
+
+### Pictures
+Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise06/)
+

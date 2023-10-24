@@ -227,7 +227,7 @@ We modified the last node-red flow we made, and added a audio out node.
 2. Edit the node-red flow to add an audio out.
 
 ### Simulation Flow
-Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/)
+Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/button-to-sound/buttonToAudio.txt)
 
 ### Pictures
 Here you can find a pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise05/button-to-sound/)
@@ -250,7 +250,7 @@ The result is that whenever you enter a message on the input field of the dashbo
 5. Try if it works
 
 ### Simulation Flow
-Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/)
+Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/text-receiver/flow.txt)
 
 ### Pictures
 Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise05/text-receiver/)
