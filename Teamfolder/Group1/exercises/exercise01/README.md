@@ -33,11 +33,13 @@ For this small example we created an Arduino program which makes the onboard LED
 4. Upload File to ESP32
 
 ### Code
-Here you can find the code -> [example_blink.ino](/Teamfolder/Group1/exercises/exercise01/Blink)
+Here you can find the code -> [builtinLedBlink.ino](/Teamfolder/Group1/exercises/exercise01/builtinLedBlink/builtinLedBlink.ino/)
 
 ### Pictures
 Pictures and videos can be found in teh following folder:
-[Pictures](/Teamfolder/Group1/pictures/exercise01/Blink)
+[Pictures](/Teamfolder/Group1/pictures/exercise01/builtinLedBlink/)
+
+<img src="../../pictures/exercise01/builtinLedBlink/blink.jpg" width="300px"/>
 
 ## Toggle Led With Button
 In this little project we wanted to make a toggle button that changed the state of the leds.
@@ -51,11 +53,14 @@ In this little project we wanted to make a toggle button that changed the state 
 4. Upload File to ESP32
 
 #### Code
-Here you can find the code -> [toggle_led.ino](/Teamfolder/Group1/exercises/exercise01/Toggle_led_with_button/)
+Here you can find the code -> [buttonToggle.ino](/Teamfolder/Group1/exercises/exercise01/buttonToggle/buttonToggle.ino)
 
 #### Pictures
 Pictures and videos can be found in teh following folder:
-[Pictures](/Teamfolder/Group1/pictures/exercise01/Toggle_led_with_button/)
+[Pictures](/Teamfolder/Group1/pictures/exercise01/buttonToggle/)
+
+<img src="../../pictures/exercise01/buttonToggle/Button process 1.jpg" width="300px"/>
+<img src="../../pictures/exercise01/buttonToggle/Button process 2.jpg" width="300px"/>
 
 ## Extra: Switch Led With Button
 In this little project we wanted to make a toggle button that changed the led that was on.
@@ -69,9 +74,11 @@ In this little project we wanted to make a toggle button that changed the led th
 4. Upload File to ESP32
 
 #### Code
-Here you can find the code -> [switch_led.ino](/Teamfolder/Group1/exercises/exercise01/Switch_led_with_button/)
+Here you can find the code -> [buttonLED.ino](/Teamfolder/Group1/exercises/exercise01/buttonLED/buttonLED.ino)
 
 #### Pictures
 Pictures and videos can be found in teh following folder:
-[Pictures](/Teamfolder/Group1/pictures/exercise01/Switch_led_with_button/)
+[Pictures](/Teamfolder/Group1/pictures/exercise01/buttonLED/)
 
+<img src="../../pictures/exercise01/buttonLED/Switch button HIGH.jpg" width="300px"/>
+<img src="../../pictures/exercise01/buttonLED/Switch button LOW.jpg" width="300px"/>

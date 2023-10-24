@@ -17,3 +17,24 @@ Binary Data Format:
 Binary formats can be highly efficient for transmitting large amounts of data in IoT. They are compact and can significantly reduce bandwidth usage. However, they are not human-readable, which can make debugging and understanding the data more challenging.
 
 ## Lab reflection
+## MQTT basics
+The MQTT basics are the following. MQTT uses a publish and subscribe protocol, which means that devices can publish data to a topic. Every other device that is also subscribed to that topic can read the data.
+
+Here are the basic commands used on the command line:
+
+iot 
+
+MQTT + TAB --> To see all options
+
+mqtt_listen sandbox/test --> Subscribes to a topic
+
+mqtt_send sandbox/test Hello World --> Publishes "Hello World" to sandbox/test
+
+"/sanbox" will disrupts the hierarchy and just listens on ip/sanbox. This is only done when using the "/" in front of the topic
+
+mqtt_action sandbox payload on mqtt_send sandbox/switch01 --> used to react on messages
+
+## MQTT Simulation
+The assignment can be found here -->
+
+This assignment was easy to do since I have experience with Node-Red. I made it at first with a function block but I apparently wasn't allowed to use it so we used switch and change blocks.

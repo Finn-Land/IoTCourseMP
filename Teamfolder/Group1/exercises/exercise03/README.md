@@ -1,76 +1,79 @@
-# Exercise 01
+# Exercise 03
 For the first exercise we wrote three small Arduino programs.
 
 ## Overview
-1. [Preparation](/Teamfolder/exercises/exercise01#preparation)
-2. [Example - blinking LED](/Teamfolder/exercises/exercise01#example---blinking-led)
-	- [How to begin](/Teamfolder/exercises/exercise01#how-to-begin)
-	- [Code for the blinking LED](/Teamfolder/exercises/exercise01#code-for-the-blinking-led)
-	- [Pictures](/Teamfolder/exercises/exercise01#pictures)
-3. [Control an ESP8266 from another ESP8266 via WLAN](/Teamfolder/exercises/exercise01#control-an-esp8266-from-another-esp8266-via-wlan)
-	- [Client - ESP8266 with a button which talks to another ESP8266](/Teamfolder/exercises/exercise01#client---esp8266-with-a-button-which-talks-to-another-esp8266)
-		- [How to begin](/Teamfolder/exercises/exercise01#how-to-begin-1)
-		- [Code for the client](/Teamfolder/exercises/exercise01#code-for-the-client)
-		- [Pictures](/Teamfolder/exercises/exercise01#pictures-1)
-	- [Server - ESP8266 with a LED which is switched on/off from the client](/Teamfolder/exercises/exercise01#server---esp8266-with-a-led-which-is-switched-onoff-from-the-client)
-		- [How to begin](/Teamfolder/exercises/exercise01#how-to-begin-2)
-		- [Code for the server](/Teamfolder/exercises/exercise01#code-for-the-server). 
-4. [Problems](/Teamfolder/exercises/exercises01#Problems)
+1. [MQTT Basics](/Teamfolder/Group1/exercises/exercise03/README.md#mqtt-basics)
+	- [How to begin](/Teamfolder/Group1/exercises/exercise03/README.md#how-to-begin)
+	- [Pictures](/Teamfolder/Group1/exercises/exercise03/README.md#pictures)
+2. [MQTT Simulation](/Teamfolder/Group1/exercises/exercise03/README.md#mqtt-simulation)
+	- [How to begin](/Teamfolder/Group1/exercises/exercise03/README.md#how-to-begin-1)
+	- [Simulation Flow](/Teamfolder/Group1/exercises/exercise03/README.md#simulation-flow)
+	- [Pictures](/Teamfolder/Group1/exercises/exercise03/README.md#pictures-1)
+3. [MQTT on microcontroller](/Teamfolder/Group1/exercises/exercise03/README.md#mqtt-on-microcontroller)
+	- [How to begin](/Teamfolder/Group1/exercises/exercise03/README.md#how-to-begin-2)
+	- [Code](/Teamfolder/Group1/exercises/exercise03/README.md#code)
+	- [Simulation Flow](/Teamfolder/Group1/exercises/exercise03/README.md#simulation-flow-1)
+	- [Pictures](/Teamfolder/Group1/exercises/exercise03/README.md#pictures-2)
 
-
-
-## Preparation
-Before we could start doing the first little example, we had to setup our Raspberry Pi.
-1. We installed the Arduino IDE from https://www.arduino.cc/en/Main/Software
-2. We added support for ESP8266 to the Arduino environment by following these steps: https://github.com/esp8266/Arduino
-3. We downloaded the image for the Raspberry Pi from https://github.com/iotempire/iotempower/blob/master/doc/image-pi.rst
-4. We checked the checksum with the tool from https://raylin.wordpress.com/downloads/md5-sha-1-checksum-utility/
-5. We downloaded etcher from https://www.balena.io/etcher/
-6. We flashed the image to the Raspberry Pi with etcher and validate it
-7. In wifi.txt we changed the WiFi name and password and removed '#' from the WiFi name line
-8. We connected the Raspberry Pi to the network via Ethernet cable and powered it up
-
-## Example - blinking LED
-For this small example we created an Arduino program which makes the onboard LED of the ESP8266 blink every second.
+## MQTT Basics
+We started with watching a video on the basics of IoT. in thsi video Ulrich explained how we can use the raspberry pi connection to communciate between terminals with MQTT.
 
 ### How to begin
-1. Tools > Board > LOLIN(WEMOS) D1 R2 & mini
-2. Files > Example > Built in examples > 01. Basics > Blink
-3. Verify the program
-4. Upload File to ESP8266
-
-### Code for the blinking LED
-Here you can find the code for the blinking LED -> [example_blink.ino](/Teamfolder/exercises/exercise01/example_blink/example_blink.ino)
+1. ssh into raspberry pi using the ip adress
+2. use one terminal to subscribe to a topic
+3. open a new terminal, ssh into pi, and publish on the topic that the first terminal is subscribed to.
+4. On the subscriber terminal you should see the text that was sent.
 
 ### Pictures
-<img src="/Teamfolder/pictures/exercise01/example_blink_picture_1.jpg" alt="drawing" width="300"/> <img src="/Teamfolder/pictures/exercise01/example_blink_picture_2.jpg" alt="drawing" width="300"/>
+Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise03/MQTT_BASICS/)
 
-## Control an ESP8266 from another ESP8266 via WLAN
-In this little project we wanted to make a server (ESP8266) which only toggles a LED when a special event occurs. That event is the click of a button on another ESP8266.
-These two ESP8266s are connected via WLAN.
+<img src="../../pictures/exercise03/MQTT_Basics/MQTT2Laptops.JPG" width="750px" height="auto"/>
 
-### Client - ESP8266 with a button which talks to another ESP8266
-This is our client which connects to the WLAN from our Raspberry Pi and also connects to the second ESP8266 via its IP address and sends a HTTP GET to it when the button is pressed.
+## MQTT Simulation
+As agreeded with the professor, we did our simulation using Node-Red. In this simulation we did three components:
 
-#### How to begin
-1. File > New
-1. Tools > Board > LOLIN(WEMOS) D1 R2 & mini
-3. Connect the cables between the ESP8266 and the button
-	- black cable of the button to the ground (G) of the ESP8266
-	- yellow cable of the button to D6 connector of the ESP8266
-	- red cable of the button to the 3V connector of the ESP8266
-2. Write the code
-3. Verify the program
-4. Upload File to ESP8266
+1. **Temperature Sensor:**  We use a Slider to simulate the change of temperature, and send the value to the topic "magnusp/temp".
+2. **Integrator:** We recive the data send from the temperature sensor on the same topic ("magnusp/temp"). After that, we use a switch to choose what to do next depending on the value of the data. We send a string (based on the temperature value) to the topic "magnusp/AC/mode". 
+3. **AC Unit:** We recive the data send from the temperature sensor on the same topic ("magnusp/AC/mode") and display a text indicating which mode the AC should be in.
 
-#### Code for the client
-Here you can find the code for the client -> [client_button.ino](/Teamfolder/exercises/exercise01/client_button/client_button.ino)
+### How to begin
+1. Open Node-Red
+2. Create the components and its relations
+3. Check if it works properly
 
-#### Pictures
-<img src="/Teamfolder/pictures/exercise01/client_button_picture_1.jpg" alt="drawing" width="300"/> <img src="/Teamfolder/pictures/exercise01/client_button_picture_2.jpg" alt="drawing" width="300"/>
+### Simulation Flow
+Here you can find the compact JSON code to import the flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise03/MQTT-Simulation/MQTT-Simulation-flow.txt)
 
-### Server - ESP8266 with a LED which is switched on/off from the client
-...
+### Pictures
+Here you can find some pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise03/MQTT_Simulation/)
 
-## Problems
-In the first Lab we had problems especially with the micro USB cables. Some of our cables did not work and that cost us time.
+<img src="../../pictures/exercise03/MQTT_Simulation/MQTT-Flow.png" width="auto" height="auto"/>
+
+<img src="../../pictures/exercise03/MQTT_Simulation/MQTT-On.png" width="517" height="400"/>
+<img src="../../pictures/exercise03/MQTT_Simulation/MQTT-Off.png" width="517" height="400"/>
+
+
+## MQTT on microcontroller
+In order to work on this assignment efficiently, we divided the assignment into 3 parts. 
+1. **Temperature Sensor:**  The code from the temperature sensor connects to the internet, subscribes to the MQTT topic (magnusp/DHTtemp). It then publishes the temperature data every 2 seconds using a non-blocking delay. 
+2. **Integrator:** For the intergator we use the same Node-Red flow as before, we only changed the topics, since we are using different topics than the simulation assignment.
+3. **AC Unit:** The AC unit uses the mqtt_esp8622 example code. We changed the topics it would subscribe to, added the WiFi credentials and the server IP and port. 
+
+### How to begin
+1. Open Node-Red
+2. Create code in visual studio for temperature sensor
+3. Create code in Arduino for AC Unit.
+4. Check if it works properly
+
+### Code
+Here you can find the different codes -> [Code VS](/Teamfolder/Group1/exercises/exercise03/ESP32%20to%20MQTT%20(DHT22)/) and 
+ [Arduino](/Teamfolder/Group1/exercises/exercise03/mqttAC/mqttAC.ino)
+
+### Simulation Flow
+Here you can find the compact JSON code to import the flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise03/MQTT-Simulation/MQTT-Simulation-flow.txt)
+
+### Pictures
+Here you can find some pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise03/MQTT_microcontroler/)
+
+<img src="../../pictures/exercise03/MQTT_microcontroler/MQTT with DHT.png" width="550" height="400"/>
+<img src="../../pictures/exercise03/MQTT_microcontroler/Sensor.jpg" width="400" height="400"/>

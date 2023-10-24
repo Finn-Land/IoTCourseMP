@@ -30,10 +30,6 @@ void loop() {
     else {
       ledState = LOW;
       Serial.println("Turning LED off");
-    }
- 
-    // control LED arccoding to the toggled state
-    digitalWrite(LED1, ledState);  //turns the LED on or off based on the variable
-   digitalWrite(LED2, ledState);  
+    } 
   }
 }
