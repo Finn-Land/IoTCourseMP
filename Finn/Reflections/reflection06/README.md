@@ -66,6 +66,22 @@ There are others as well, but these are the most important
     - The filter chaining 
 
 ## Lab reflection
+We worked on the following assignments:
 
+### 1. RFID Reader
+
+The RFID reader was a simple exercise, we hooked it up to the Wemos D1 mini, ran the code and it could read the card UID on the MQTT topic. We then made the logic for "Acces granted" and "Access denied".
+
+### 2. LED with PWM
+
+We used the ESP32 minikit for this exercise, we struggled doing it on the Wemos because the PWM didn't want to work. So when we switched to the ESP32, changed the pin it did finally work.
+
+### 3. Buzzer with PWM
+
+This exercise was easy to do since we already used PWM with an LED, so using a buzzer was just replacing the LED with a buzzer and it worked.
+
+###  4. Group project
+
+The group project took some more time, I did the RFID reader with the traffic lights. I gave the flow with the components to Vincent who made the rest of the assignment.
 
 
