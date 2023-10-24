@@ -12,6 +12,6 @@ Once again, the lab level of difficulty fluctuates. Most of the times we need ea
 
 I helped Cristina, Jorrit and Luca with a small problem that they had in their code, it was actually a really dumb problem (a line was commented and they needed it)
 
-For one of the activities, we had to setup a discord. This bot had to react to a button, and when pressed, send a message to the discord server.
+For one of the activities, we had to setup a discord. This bot had to react to a button, and when pressed, send a message to the discord server. We created a node-red flow, and a code in visual studio to do that.
 
-
+For the last activity, we had so send a message to the discord server, and that message had to triggers a real physical device to be switched on. What we did was turning on/off a LED.

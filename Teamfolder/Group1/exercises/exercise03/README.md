@@ -27,6 +27,8 @@ We started with watching a video on the basics of IoT. in thsi video Ulrich expl
 ### Pictures
 Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise03/MQTT_BASICS/)
 
+<img src="../../pictures/exercise03/MQTT_Basics/MQTT2Laptops.JPG" width="750px" height="auto"/>
+
 ## MQTT Simulation
 As agreeded with the professor, we did our simulation using Node-Red. In this simulation we did three components:
 
@@ -43,7 +45,13 @@ As agreeded with the professor, we did our simulation using Node-Red. In this si
 Here you can find the compact JSON code to import the flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise03/MQTT-Simulation/MQTT-Simulation-flow.txt)
 
 ### Pictures
-Here you can find some pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise03/MQTT_Simulation//)
+Here you can find some pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise03/MQTT_Simulation/)
+
+<img src="../../pictures/exercise03/MQTT_Simulation/MQTT-Flow.png" width="auto" height="auto"/>
+
+<img src="../../pictures/exercise03/MQTT_Simulation/MQTT-On.png" width="517" height="400"/>
+<img src="../../pictures/exercise03/MQTT_Simulation/MQTT-Off.png" width="517" height="400"/>
+
 
 ## MQTT on microcontroller
 In order to work on this assignment efficiently, we divided the assignment into 3 parts. 
@@ -66,3 +74,6 @@ Here you can find the compact JSON code to import the flow -> [Compact JSON](/Te
 
 ### Pictures
 Here you can find some pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise03/MQTT_microcontroler/)
+
+<img src="../../pictures/exercise03/MQTT_microcontroler/MQTT with DHT.png" width="550" height="400"/>
+<img src="../../pictures/exercise03/MQTT_microcontroler/Sensor.jpg" width="400" height="400"/>

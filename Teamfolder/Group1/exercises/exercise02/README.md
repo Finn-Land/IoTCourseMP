@@ -48,7 +48,10 @@ Here you can find the code -> [HelloServer.ino](/Teamfolder/Group1/exercises/exe
 
 ### Pictures
 Pictures and videos can be found in teh following folder:
-[Pictures](/Teamfolder/Group1/pictures/exercise02/)
+[Pictures](/Teamfolder/Group1/pictures/exercise02/HelloServer/)
+
+<img src="../../pictures/exercise02/HelloServer/HTTPSerialMonitor.png" width="550" height="auto"/>
+<img src="../../pictures/exercise02/HelloServer/browserScreenshot.png" width="550" height="auto"/>
 
 ## Use a Button to Create Web Request Step 1
 In this project we use 2 ESP32, one as a server and one as a client, to change the state of the builtin led. We did this by using an HTTP GET request to the server that triggered the server code to turn on the builtin LED.
@@ -66,6 +69,14 @@ In this project we use 2 ESP32, one as a server and one as a client, to change t
 #### Code
 Here you can find the code for the client -> [BasicHttpClient.ino](/Teamfolder/Group1/exercises/exercise02/BasicHttpClient/BasicHttpClient.ino)
 
+### Pictures
+Pictures and videos can be found in teh following folder:
+[Pictures](/Teamfolder/Group1/pictures/exercise02/)
+
+<img src="../../pictures/exercise02/BasicHttpClient/ledONOFFWS.png" width="550" height="auto"/>
+<img src="../../pictures/exercise02/BasicHttpClient/request pending.jpg" width="550" height="auto"/>
+<img src="../../pictures/exercise02/BasicHttpClient/requested.jpg" width="550" height="auto"/>
+
 ### Server
 
 #### How to begin
@@ -73,10 +84,6 @@ Here you can find the code for the client -> [BasicHttpClient.ino](/Teamfolder/G
 
 #### Code
 Here you can find the code -> [HelloServer.ino](/Teamfolder/Group1/exercises/exercise02/HelloServer/HelloServer.ino)
-
-### Pictures
-Pictures and videos can be found in teh following folder:
-[Pictures](/Teamfolder/Group1/pictures/exercise02/Button_to_create_web_request_1/)
 
 ## Use a Button to Create Web Request Step 2
 In this project we use 2 ESP32, one as a server and one as a client, to change the state of the builtin LED.
@@ -90,7 +97,7 @@ When the button was integrated into the client code, we were able to toggle an H
 3. Upload File to ESP32
 
 #### Code
-Here you can find the code for the client -> [BasicHttpClient.ino](/Teamfolder/Group1/exercises/exercise02/BasicHttpClient/BasicHttpClient.ino)
+Here you can find the code for the client -> [BasicHttpClient.ino](/Teamfolder/Group1/exercises/exercise02/BasicHttpClient.ino)
 
 ### Server
 
@@ -103,5 +110,3 @@ Here you can find the code -> [HelloServer.ino](/Teamfolder/Group1/exercises/exe
 ### Pictures
 Pictures and videos can be found in teh following folder:
 [Pictures](/Teamfolder/Group1/pictures/exercise02/ButtonHttpClient/)
-
-

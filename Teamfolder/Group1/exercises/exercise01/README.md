@@ -39,6 +39,8 @@ Here you can find the code -> [builtinLedBlink.ino](/Teamfolder/Group1/exercises
 Pictures and videos can be found in teh following folder:
 [Pictures](/Teamfolder/Group1/pictures/exercise01/builtinLedBlink/)
 
+<img src="../../pictures/exercise01/builtinLedBlink/blink.jpg" width="300px"/>
+
 ## Toggle Led With Button
 In this little project we wanted to make a toggle button that changed the state of the leds.
 
@@ -56,6 +58,9 @@ Here you can find the code -> [buttonToggle.ino](/Teamfolder/Group1/exercises/ex
 #### Pictures
 Pictures and videos can be found in teh following folder:
 [Pictures](/Teamfolder/Group1/pictures/exercise01/buttonToggle/)
+
+<img src="../../pictures/exercise01/buttonToggle/Button process 1.jpg" width="300px"/>
+<img src="../../pictures/exercise01/buttonToggle/Button process 2.jpg" width="300px"/>
 
 ## Extra: Switch Led With Button
 In this little project we wanted to make a toggle button that changed the led that was on.
@@ -75,3 +80,5 @@ Here you can find the code -> [buttonLED.ino](/Teamfolder/Group1/exercises/exerc
 Pictures and videos can be found in teh following folder:
 [Pictures](/Teamfolder/Group1/pictures/exercise01/buttonLED/)
 
+<img src="../../pictures/exercise01/buttonLED/Switch button HIGH.jpg" width="300px"/>
+<img src="../../pictures/exercise01/buttonLED/Switch button LOW.jpg" width="300px"/>
