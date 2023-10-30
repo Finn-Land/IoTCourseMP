@@ -1,7 +1,7 @@
 # Reflection 04
 
 ## Lecture reflection
-The lecture today was about using node-red. I have a lot of experience with 
+The lecture today was about using node-red. I have a lot of experience with node-red before this day. 
 
 ## Lab reflection
 For this lab the idea was to create the following tasks:

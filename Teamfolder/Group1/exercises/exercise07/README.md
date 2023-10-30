@@ -39,7 +39,7 @@ Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise06/
 
 
 ## Access Control System -> New Actors -> 1
-For this activity we wired a LED with a resistor to the Wemos D1. After that, created a new node called "PWM_FJJ". Once there, we adjusted the setup.cpp to use PWM on the pin with the following code:
+For this activity we wired an LED with a resistor to the Wemos D1. After that, created a new node called "PWM_FJJ". Once there, we adjusted the setup.cpp to use PWM on the pin with the following code:
 
 	pwm(pwm, 7, 2000);
 
@@ -53,7 +53,7 @@ At the end, we managed to finish the activity and successfully created a slider 
 ### How to begin
 1. Wire a LED with a resistor to the Wemos D1
 2. Create new node
-3. Adjust seup.cpp to use PWM on this GPIO
+3. Adjust setup.cpp to use PWM on this GPIO
 4. Flash Wemos D1
 5. Create a node-red flow with a slider to control the brightness od the LED
 6. Check if it works

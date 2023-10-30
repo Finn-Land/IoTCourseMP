@@ -20,17 +20,16 @@ My portfolio
 [Reflection](/Finn/Reflections/reflection06/README.md)
 
 ## Seventh day
+[Reflection](/Finn/Reflections/reflection07/README.md)
 
 ## Eighth day
+[Reflection](/Finn/Reflections/reflection08/README.md)
 
 ## Ninth day
+[Reflection](/Finn/Reflections/reflection09/README.md)
 
 ## Tenth day
 
 ## Eleventh day
 
 ## Twelfth day
-
-## Additional things
-
-## Ranking for the videos
