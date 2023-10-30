@@ -4,7 +4,7 @@
 
 In this lecture we learned about securing MQTT broker connections.
 
-### 5 different ways to secure MQTT broker communication
+### Five different ways to secure MQTT broker communication
 
 1. Port 1883: This is typically associated with the MQTT (Message Queuing Telemetry Transport) protocol, which is a lightweight and efficient messaging protocol often used for IoT applications. 
 MQTT by itself does not provide security features, so it is crucial to implement security measures like authentication and encryption when using this port for IoT applications.
@@ -24,22 +24,15 @@ Security implications: Port 8080 requires security measures such as firewalls, i
 5. Port 8088 is another HTTP port commonly used for web services. It's often used to host web applications alongside other services that may be running on different ports.
 Security implications: Similar to Port 8080, Port 8088 requires standard web application security practices to safeguard against threats like SQL injection, cross-site scripting (XSS), and other web-related attacks.
 
+### Two types of encryption
 
+*Symmetric encryption* is fast and efficient, making it suitable for encrypting large volumes of data. 
 
-Symmetric encryption
-Uses the same keys for encryption and decryption
-Assymmetric encryption
-Different keys for encryption and decryption
+The problem is securely sharing the encryption key between the sender and receiver. If an attacker gains access to the key, they can decrypt the data.
 
-SSL supports both
-certificates must be signed
-A certificate contains:
-    - A public key
-    - Certificate informations
-    - Information abpout the domain
-    - A digital certfiicate from a certificate authority (CA)
-To each certificate a private key exists which can be protected using a password.
-The public key of a certificate and it's private key form a public/private key pair
+*Asymmetric encryption* uses a pair of keys: a public key and a private key. 
+
+Data encrypted with the public key can only be decrypted with the corresponding private key, and vice versa. This system eliminates the need for secure key exchange, making it more suitable for scenarios like digital signatures and secure key distribution.
 
 ## Lab reflection
 
@@ -51,7 +44,11 @@ Next we had to analyse the security vulnerabilites in our IoT scenarios. For thi
 3. Passwords are visible in code, we hardcoded the password variables which meant that anyone could read them that had access to our GIT repo. To keep our passwords safe they should be in a file that is not visible on our GIT repo.
 4. Unsecured port. The most common port used for MQTT is port 1883. This port however is not secured. In order to combat this we can use a different port like 8883, this port is commonly used as a TLS/SSL port that secures the communication.
 
-### Exercise 02, 
+### Exercise 02, The Chain of Trust
+
+**What is a cipher suite?**
+
+A cipher suite is a combination of encryption and security algorithms used to protect data during network communication. It includes methods for securing data and ensuring its authenticity. Cipher suites are often used in protocols like SSL/TLS for secure online communication.
 
 **What is a chain of trust?**
 
@@ -82,10 +79,13 @@ What ist the name of an other prominent representative of a chain of trust?
 
 Another prominent representative of a chain of trust is the public key infrastructure (PKI).
 
-**How do root of trust and web of trust differ?**
+**What is the name of another prominent representative of a chain of trust?**
+Web of trust
+
+- **How do root of trust and web of trust differ?**
 
 Root of trust and web of trust differ in their trust models. Root of trust relies on a centralized authority (the root CA) for trust, while web of trust is a decentralized model where trust is established through peer recommendations and direct verification.
 
-**Which one is more secure?**
+- **Which one is more secure?**
 
 Root of trust is generally considered more secure because it relies on a centralized, highly trusted authority, whereas web of trust can be more vulnerable to inaccuracies and malicious recommendations, making it less secure in some cases.

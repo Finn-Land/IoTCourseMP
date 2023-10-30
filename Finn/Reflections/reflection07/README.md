@@ -12,17 +12,18 @@ Also I disccused with my teammates what I wanted to do tomorrow and what ideas I
 - OLED screen
 - Buzzer
 
-**Modules:**
+These are divided into 4 modules:
 
-The firts module is the sort of alarm system. It's 
+1. RFID reader
+2. Alarm system, RGB-LED, buzzer and OLED screen
+3. M5 to trigger on hand movement
+4. M5 to react on hand movement on other M5's movement
 
-The second module is one M5. This one will be used as a gesture recognizer to make an LED light up. So when the M5 is moved fast to the right an LED will light up to indicate it working.
-
-The third module is the other M5
-
+The modules are further explained in the group portfolio.
 
 
 ## Lab reflection
+No real lab reflection today. We didn't do that much on this day since people in the group were figuring out the payment for the dorms. There also weren't any labs to do so it was mostly thinking about the structure of the final project that we have to do, as you can see above.
 
 
 
