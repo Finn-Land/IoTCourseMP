@@ -36,7 +36,7 @@ Data encrypted with the public key can only be decrypted with the corresponding 
 
 ## Lab reflection
 
-### Exercise 01, Security vulnerabilities in IoT scenarios
+### Exercise 01. Security vulnerabilities in IoT scenarios
 Next we had to analyse the security vulnerabilites in our IoT scenarios. For this we came up with 4 in total:
 
 1. No data encryption. The data that we sent over MQTT was not encrypted. it could be read by anyone who was listening. To solve this certificates should be used on both the server and the client side.
@@ -44,7 +44,7 @@ Next we had to analyse the security vulnerabilites in our IoT scenarios. For thi
 3. Passwords are visible in code, we hardcoded the password variables which meant that anyone could read them that had access to our GIT repo. To keep our passwords safe they should be in a file that is not visible on our GIT repo.
 4. Unsecured port. The most common port used for MQTT is port 1883. This port however is not secured. In order to combat this we can use a different port like 8883, this port is commonly used as a TLS/SSL port that secures the communication.
 
-### Exercise 02, The Chain of Trust
+### Exercise 02. The Chain of Trust
 
 **What is a cipher suite?**
 
@@ -89,3 +89,76 @@ Root of trust and web of trust differ in their trust models. Root of trust relie
 - **Which one is more secure?**
 
 Root of trust is generally considered more secure because it relies on a centralized, highly trusted authority, whereas web of trust can be more vulnerable to inaccuracies and malicious recommendations, making it less secure in some cases.
+
+### Exercise 03. Key Exchange
+
+**How are Diffie-Hellman key exchange and SSL/TLS related?**
+
+Diffie-Hellman is a key exchange algorithm that allows two parties to securely negotiate a shared secret key over an insecure channel without transmitting the key itself. This shared secret key can be used for subsequent symmetric encryption, ensuring the confidentiality and integrity of data exchanged between the parties.
+
+SSL/TLS uses symmetric and asymmetric encryption. The Diffie-Hellman key exchange is one of the methods used within SSL/TLS for securely agreeing on a shared secret key, particularly for key exchange in the initial handshake phase.
+
+**How are RSA key exchange and SSL/TLS related?**
+
+RSA is a fundamental component of TLS/SSL protocols, primarily used for secure key exchange and server authentication during the handshake process. It ensures that data encryption keys are exchanged securely, and it verifies the identity of the server. RSA is not used for the actual data encryption; instead, symmetric encryption is used
+
+### Exercise 04. Symmetric validation
+
+**What forces Bob to validate Alice's certificate?**
+
+Bob is compelled to validate Alice's certificate to ensure that he is connecting to the legitimate server (Alice). Validation is important to prevent man-in-the-middle attacks and verify that Alice's certificate is issued by a trusted certificate authority (EXCA). Bob's trust in Alice's certificate is crucial for establishing a secure connection.
+
+**Is it possible to also force Alice to validate Bob's identity?**
+
+Yes, it is possible for Alice to validate Bob's identity by requesting and verifying Bob's certificate. This can be done by configuring Alice's server to request a client certificate from Bob. If Bob is not able to provide a valid client certificate signed by a trusted CA, Alice can choose to deny the connection.
+
+**Which additional certificates are necessary?**
+
+For Alice to validate Bob's identity, Bob needs to have a client certificate signed by a trusted CA, similar to Alice's certificate. This means that Bob should possess a certificate issued by EXCA or another trusted CA that Alice recognizes. Bob's certificate is necessary for mutual authentication and can be used to prove his identity to Alice.
+
+### Exercise 05. OpenWRT 
+**1. Access the WEB interface of OpenWRT.**
+
+    Do this by navigating to the IP in the browser: 
+    192.168.12.254
+    
+**2. Discover the symbolic host name of the lan interface address.**
+
+    Symbolic host name of LAN interface address: br-lan
+
+**3. Ssh into the router using the IP address or the symbolic host name and execute shell commands.**
+
+Password is "iotempire"    
+
+    ssh root@192.168.12.254
+
+Shell commands:
+
+![Router activities](image.png)
+
+**4. Sftp into the router and upload/download files to and from it.**
+![Alt text](image-1.png)
+
+SFTP didn't work for me so I used SCP.
+
+After logging in we can see the file I created and download it:
+
+![Alt text](image-2.png)
+
+From here I can download the file and upload my own files
+
+**5. Install new packages on the router using either the WEB interface or the opkg command line utility**
+
+Installing packages can be done ssh'ing into the router and using opkg [command]:
+
+    opkg upgrade
+    opkg list
+
+**6. Where are the remote package repositories configured?**
+
+You can find them using:
+
+    nano /etc/opkg/distfeeds.conf
+
+The final group assignment was documented in Vincent's folder:
+[Final assignment](/Vincent/Days/Ninthday/README.md)
