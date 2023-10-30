@@ -1,12 +1,5 @@
 # Reflection day 2
 
-## Overview
-1. [Lecture reflection](/Finn/Reflections/reflection02/README.md#lecture-reflection)
-2. [Lab reflection](/Finn/Reflections/reflection02/README.md#lab-reflection)
-    - [Raspberry pi](/Finn/Reflections/reflection02/README.md#setting-up-raspberry-pi)
-    - [Control LED with web request](/Finn/Reflections/reflection02/README.md#control-led-with-web-request)
-    - [Button for web request](/Finn/Reflections/reflection02/README.md#button-for-web-request)
-
 ## Lecture reflection
 The first lecture of this module was the introduction to IoT. Having worked with IoT before and embedded systems, I found it to be quite refreshing. On this day I did feel quite bad, I had food poisoning and had to puke several times, hence why I left the classroom during an explanation. The lecture went through an explanation on IoT, some IoT domains, microcontrollers used and protocol examples. We also talked about the advantages/disadvantages that are present within the IoT field. 
 

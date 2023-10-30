@@ -3,13 +3,13 @@ Repo for the IoT course, groupname: Magnus Perfectus
  
 In this repo there are five different portfolios. One for each student.
 
-## Finn (student ID (?))
+## Finn
 [Finn](/Finn/README.md)
-## Johannes (student ID (?))
+## Johannes
 [Johannes](/Johannes/README.md)
-## Vincent (student ID (?))
+## Vincent
 [Vincent](/Vincent/README.md)
-## Stephan (student ID (?))
+## Stephan
 [Stephan](/Stephan/README.md)
-## Judit (student ID (?))
+## Judit
 [Judit](/Judit/README.md)
