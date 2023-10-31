@@ -7,7 +7,7 @@
 #### Create and initialize new node
 - Start with creating a new node folder
 - Edit board if needed
-- Add sensors and actuators
+- Add sensors and actuators to setup.cpp, the code for these can be found in the "Documentation"tab.
 - Initialize code on board
 
 #### Finding documentation
@@ -65,23 +65,44 @@ There are others as well, but these are the most important
 - What is the “fluent” style?
     - The filter chaining 
 
+### Feature list update
+The feature I wanted the most was an easy-to-read log
+
+IotEmpower provides what I would say is an easy to read log. It has descriptive error codes, and has a similair log to the one that platform IO uses.
+
 ## Lab reflection
 We worked on the following assignments:
 
 ### 1. RFID Reader
 
-The RFID reader was a simple exercise, we hooked it up to the Wemos D1 mini, ran the code and it could read the card UID on the MQTT topic. We then made the logic for "Acces granted" and "Access denied".
+The RFID reader was a simple exercise, we hooked it up to the Wemos D1 mini, ran the code and it could read the card UID on the MQTT topic. We then made the logic for "Access granted" and "Access denied".
+
+[RFID Reader](/Teamfolder/Group1/exercises/exercise06/README.md#rfid-reader)
 
 ### 2. LED with PWM
 
 We used the ESP32 minikit for this exercise, we struggled doing it on the Wemos because the PWM didn't want to work. So when we switched to the ESP32, changed the pin it did finally work.
 
+[LED with PWM](/Teamfolder/Group1/exercises/exercise06/README.md#access-control-system---new-actors---1)
+
 ### 3. Buzzer with PWM
 
 This exercise was easy to do since we already used PWM with an LED, so using a buzzer was just replacing the LED with a buzzer and it worked.
 
-###  4. Group project
+[Buzzer with PWM](/Teamfolder/Group1/exercises/exercise06/README.md#access-control-system---new-actors---2)
+
+###  4. RGB LED
+
+I didn't do this exercise during the lab, but in our final project that we are presenting on the last day. It's a simple porgram that receives the RGB values on seperate topics, and changes the color of the LED based on the color value that was just changed.
+
+[RGB LED](/Teamfolder/Final%20Project/README.md)
+
+###  5. Group project
 
 The group project took some more time, I did the RFID reader with the traffic lights. I gave the flow with the components to Vincent who made the rest of the assignment.
+
+[Group project](/Vincent/Days/Sixthday.md#project-1-group)
+
+Overall the exercises were pretty easy, they just took some time. As mentioned we also had some issues with PWM on the ESP32 minikit, which we swapped with normal ESP32. The exercises for me up until this point are very simple, but since I'm working with someone else without experience it can be tiring to make the simple assignment and having to explain it to someone with minimal coding experience.
 
 

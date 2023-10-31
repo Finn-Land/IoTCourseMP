@@ -55,7 +55,7 @@ At the end, we managed to finish the activity and successfully created a slider 
 2. Create new node
 3. Adjust seup.cpp to use PWM on this GPIO
 4. Flash Wemos D1
-5. Create a node-red flow with a slider to control the brightness od the LED
+5. Create a node-red flow with a slider to control the brightness of the LED
 6. Check if it works
 
 ## Access Control System -> New Actors -> 2
