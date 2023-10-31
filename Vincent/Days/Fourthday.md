@@ -11,6 +11,8 @@ Node-RED is an open-source flow-based development tool for visual programming. I
 Because Docker on my laptop doesn't work as intended, I decide to use one of my Ubuntu GUI VM machines. To install Node-Red I used the following command:
 - Sudo snap install node-red
 
+Because I want to use my Windows machine instead of a VM, I bridged one of the network adapters, so I could access the website via windows.
+
 This started to install it. Using a VM gives other challenges to connect to it. Because a VM uses its own IP range, and not the IP range from our router (iotempire-Magnusperfectus), I needed to do something sneeky, I bridge my VM, so my VM got the following IP address (192.168.12.179). With that I could access Node-Red from my Windows Laptop.
 
 # Challenge 1
@@ -362,6 +364,10 @@ client.loop();
 Stefan made the Node-Red layout, which in the end looked like this: 
 ![](../Photos/Node_red_Discord.png) (upper one)
 
+To see that the emergency button works in Discord:
+
+![Alt text](image-20.png)
+
 ## Challenge 3
 
 The last challenge of the day is as following: 
@@ -683,3 +689,5 @@ first, feedback. Today was a good day for both me and Stefan. Stefan did a great
 Then a reflection on my own work, I think I did a great job today. I found it really clever from myself to use two different codes, that we already previously made, to recycle them. Futhermore i'm glad that I didn't use ChatGPT in the final part, and just read the official documentation. I think this was the best call, because reading the documentation allows me to better understand the material instead of copy and paste what ChatGPT gives me. Now I think I can make it again, without using Google or ChatGPT. 
 
 For tomorrow I want to continue on the same feet as today. Overall I'm glad with what I made today.
+
+Stefan and I helped eachother with the discord bot, I read the official documentation on the discord bot, so I could explain it a bit better to other people and to Stefan. 
