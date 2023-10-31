@@ -1,4 +1,5 @@
 # Reflections
+[Other Reflections](../README.md)
 
 ## Week 1
 
@@ -21,3 +22,9 @@ The activities are poorly written down, which makes it hard for people outside t
 Out of 4 activities, we just managed to complete 2 in a period of 3 hours. I have to admit, though, that we have an idea of how to start the third activity.
 
 Overall, I am not enjoying the curve of learning because it is not a curve, it is a straight line that goes beyond my comprehension.
+
+You can find the codes of our activities on the Exercises Folder:
+[Codes](/Teamfolder/Group1/exercises/exercise02/README.md)
+
+You can find pictures of our activities on the Pictures Folder:
+[Pictures](/Teamfolder/Group1/pictures/exercise02/)

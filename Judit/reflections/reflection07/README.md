@@ -1,19 +1,39 @@
 # Reflections
+[Other Reflections](../README.md)
 
 ## Week 2
 
-### Day 6
+### Day 7
 
 #### Lecture reflection
-It is officially the sixth day of class, and I cannot say I feel like I know where I am or what I am doing. 
-Sure, IoT stuff. Sure, working on a project. But how? no clue.
+The lecure has last maximum five minutes. After that, we had to work on our projects or finish yesterdays activity. 
 
-What have I learned today? I am not quite sure either. 
-All I know is that most of the class has been about the IoTempower gateway.
+We had already finished yesterday's activity and we have zero materials for the group project. So all I can do is make sure the portfolio looks good.
 
-We have done some research, but most of it is self centered in the IoTempower gateway.
+However, we did discuss the group project with Ulno. Since we have an online translator, it is hard to find an IoT solution that is suitable for it. 
+
+We somehow agreed that tomorrow we will work on the project, and use some items we already have here in class.
+
+After that, I focused on updating and organazing my portfolio.
 
 #### Lab reflection
-During the lab session, we finished friday's last activity and started today's activities. 
+We have worked on our group project.
+We decided our project would be divided in different modules.
+- Alarm system?
+- An M5 used as a gesture recognizer. It will turn on or off one LED. 
+- Another M5. This one 
 
-We haven't had major issues with them aside from having to wait for the other half of the group to deploy and sharing hardware. Another issue we had was the Wemos D1 mini. The board suddenly stopped working properly.
+To do all this, we will use the following components:
+- RFID Scanner
+- Two M5's
+- RGB-LED
+- OLED screen
+- Buzzer
+
+I also teamed up with Xavi and Cristina to do some lab tasks.
+
+You can find the codes of our activities on the Exercises Folder:
+[Codes](/Teamfolder/Group1/exercises/exercise07/README.md)
+
+You can find pictures of our activities on the Pictures Folder:
+[Pictures](/Teamfolder/Group1/pictures/exercise07/)

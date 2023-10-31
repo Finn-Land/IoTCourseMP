@@ -1,5 +1,5 @@
 # Exercise 02
-For the first exercise we wrote three small Arduino programs.
+We did some Arduino and VS Code programs related with IoT.
 
 ## Overview
 1. [Preparation](/Teamfolder/Group1/exercises/exercise02/README.md#preparation)
@@ -97,7 +97,8 @@ When the button was integrated into the client code, we were able to toggle an H
 3. Upload File to ESP32
 
 #### Code
-Here you can find the code for the client -> [BasicHttpClient.ino](/Teamfolder/Group1/exercises/exercise02/BasicHttpClient.ino)
+Here you can find the code for the client -> [BasicHttpClient.ino](/Teamfolder/Group1/exercises/exercise02/BasicHttpClient/BasicHttpClient.ino)
+
 
 ### Server
 

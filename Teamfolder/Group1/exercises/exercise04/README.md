@@ -1,5 +1,5 @@
 # Exercise 04
-For the first exercise we wrote three small Arduino programs.
+We did some Node-red flows. Also used the Wemos, a Discord Bot and others.
 
 ## Overview
 1. [Node-Red Intro](#node-red-intro)
@@ -53,7 +53,7 @@ We faced some problems like not being able to properly link the discord bot to n
 5. Check if it works properly
 
 ### Simulation Flow
-Here you can find the compact JSON code to import the flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise04/emergency_button/Simulation-flow.txt)
+Here you can find the compact JSON code to import the flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise04/emergency_button/flow.txt)
 
 ### Code
 Here you can find the visual studio code -> [Code](/Teamfolder/Group1/exercises/exercise04/emergency_button/ESP32%20to%20MQTT%20(DHT22)/)
@@ -61,22 +61,21 @@ Here you can find the visual studio code -> [Code](/Teamfolder/Group1/exercises/
 ### Pictures
 Here you can find some pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise04/emergency-button/)
 
+<img src="../../pictures/exercise04/emergency-button/emergency-button.png" widht="auto" />
+
 ## Remote Control an Internal Device
 In this activity, we had to trigger a real physical device by sending a message on the discord server. In order to do that, we created a flow in Node-red that uses the bot previously created to to read the #sandbox channel. If the bot reads a certain message, it publishes on the topic a text that triggers the ESP32 to turn on or off the LED.
 
 ### How to begin
 
 1. Create a Node-red flow for the bot to publish on the topic when message recived
-2. Create a code in visual studio for the ESP32 to toggle the LED
-3. Send a Discord message on the #Sandbox Channel
-4. Wait for the LED to toggle its state
+2. Send a Discord message on the #Sandbox Channel
+3. Wait for the LED to toggle its state
 
 ### Simulation Flow
-Here you can find the Node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise04/remote-control/)
-
-### Code
-Here you can find the visual studio code -> [Code](/Teamfolder/Group1/exercises/exercise04/remote-control/)
+Here you can find the Node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise04/remote-control/flow.txt)
 
 ### Pictures
 Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise04/remote-control/)
 
+<img src="../../pictures/exercise04/remote-control/remote-control.png" widht="auto" />

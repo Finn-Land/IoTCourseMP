@@ -1,4 +1,5 @@
 # Reflections
+[Other Reflections](../README.md)
 
 ## Week 1
 
@@ -15,3 +16,9 @@ I helped Cristina, Jorrit and Luca with a small problem that they had in their c
 For one of the activities, we had to setup a discord. This bot had to react to a button, and when pressed, send a message to the discord server. We created a node-red flow, and a code in visual studio to do that.
 
 For the last activity, we had so send a message to the discord server, and that message had to triggers a real physical device to be switched on. What we did was turning on/off a LED.
+
+You can find the codes of our activities on the Exercises Folder:
+[Codes](/Teamfolder/Group1/exercises/exercise04/README.md)
+
+You can find pictures of our activities on the Pictures Folder:
+[Pictures](/Teamfolder/Group1/pictures/exercise04/)

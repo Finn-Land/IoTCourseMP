@@ -1,4 +1,5 @@
 # Reflections
+[Other Reflections](../README.md)
 
 ## Week 1
 
@@ -29,3 +30,8 @@ We interconnected the three components to create a simulation of the activity we
 
 Lastly, we successfully implemented the activity with the ESP32, the mini ESP32 and a temperature sensor. This last activity was extremely difficult to understand for me.
 
+You can find the codes of our activities on the Exercises Folder:
+[Codes](/Teamfolder/Group1/exercises/exercise03/README.md)
+
+You can find pictures of our activities on the Pictures Folder:
+[Pictures](/Teamfolder/Group1/pictures/exercise03/)

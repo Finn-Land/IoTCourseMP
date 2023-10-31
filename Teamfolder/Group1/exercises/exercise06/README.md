@@ -1,7 +1,23 @@
 # Exercise 06
-For the first exercise we wrote three small Arduino programs.
+We did more exercises using the IoTempower Framework, the Wemos we have and some sensors, buzzers and LEDs.
+
 
 ## Overview
+1. [Improved Scenarios](#improved-scenarios)
+	- [Pictures](#pictures)
+2. [RFID Reader](#rfid-reader)
+	- [How to begin](#how-to-begin)
+	- [Simulation Flow](#simulation-flow)
+	- [Pictures](#pictures)
+3. [Access Control System -> New Actors -> 1](#access-control-system---new-actors---1)
+	- [How to begin](#how-to-begin)
+	- [Simulation Flow](#simulation-flow)
+	- [Pictures](#pictures-1)
+3. [Access Control System -> New Actors -> 2](#access-control-system---new-actors---2)
+	- [How to begin](#how-to-begin-1)
+	- [Simulation Flow](#simulation-flow-1)
+	- [Pictures](#pictures-2)	
+3. [Project](#project)
 
 ## Improved Scenarios
 First task we did was update the scenarios to make them more suitable torwards our IoT project and or overall project.
@@ -32,10 +48,10 @@ We then created a Node-Red flow wit an mqtt_in on the topic /RFID_FJJ/reader/#. 
 6. Check if it works
 
 ### Simulation Flow
-Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise06/)
+Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise06/RFID/flow.txt)
 
 ### Pictures
-Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise06/)
+Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise06/RFID%20Reader/)
 
 
 ## Access Control System -> New Actors -> 1
@@ -58,6 +74,12 @@ At the end, we managed to finish the activity and successfully created a slider 
 5. Create a node-red flow with a slider to control the brightness od the LED
 6. Check if it works
 
+### Simulation Flow
+Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise06/LED/LED.txt)
+
+### Pictures
+Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise06/LED/)
+
 ## Access Control System -> New Actors -> 2
 For this activity we wired a Buzzer where the LED was to the Wemos D1. We also had to modify the node-red flow, adding another slider that changes the frequency sending the payload to the topic "PWM_FJJ/pwm/frequency/set".
 
@@ -69,7 +91,11 @@ The result is a Wemos D1 connected to a buzzer that can change it's intensity an
 2. Check if it works
 
 ### Simulation Flow
-Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise06/)
+Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise06/BUZZER/Buzzer.txt)
 
 ### Pictures
-Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise06/)
+Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise06/BUZZER)
+
+## Project
+Information about the project can be found in:
+[Project](/Teamfolder/exercises/README.md)

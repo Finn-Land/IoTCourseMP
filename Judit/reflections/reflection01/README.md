@@ -1,5 +1,5 @@
 # Reflections
-
+[Other Reflections](../README.md)
 ## Week 1
 
 ### Day 1
@@ -24,9 +24,8 @@ Also, I have learned that "#define" works better to define the component and its
 
 Another thing I have learned is that you can use "Tinkercad" from Autodesk to try out your code and connections beforehand.
 
-
-You can find the codes of our activities on the Pictures Folder:
-[Codes](/Teamfolder/Group1/exercises//exercise01/)
+You can find the codes of our activities on the Exercises Folder:
+[Codes](/Teamfolder/Group1/exercises/exercise01/README.md)
 
 You can find pictures of our activities on the Pictures Folder:
 [Pictures](/Teamfolder/Group1/pictures/exercise01/)

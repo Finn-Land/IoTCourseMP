@@ -1,5 +1,7 @@
 # Research records 01
 
+[Other Researches](../README.md)
+
 ## Contents
 1. [Who are U?](README.md#who-are-u)
     - [What type of programming experience do you have?](README.md#what-type-of-programming-experience-do-you-have)
@@ -118,4 +120,4 @@ Refers to the intercommunication of everyday objects, devices, and appliances to
 
 ## Lab
 Activities can be found in the Group1 folder: 
-[Activities](/Teamfolder/Group1/exercises/exercise03/README.md)
+[Activities](/Teamfolder/Group1/exercises/exercise01/README.md)

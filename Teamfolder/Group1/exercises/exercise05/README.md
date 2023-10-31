@@ -1,5 +1,5 @@
 # Exercise 05
-For the first exercise we wrote three small Arduino programs.
+We did some exercises using the IoTempower Framework using the Wemos, buttons, a OLED Shield and LEDs.
 
 ## Overview
 1. [IoT Empower](#iot-empower)
@@ -175,6 +175,8 @@ In this part of the activity, we set-up and configurated our first IoT node.
 
 First, we went to the https://gw.iotempire.net website and accessed the configuration folder while connected to our RaspberryPi Wifi. Once there, we createde a new Node by creating a folder and renaming it. Then modified the setup.cpp file to add a button and LED functionality.
 
+We created a node-red flow that reads the topic "thebests/#" and debugs its state.
+
 After that, we used mqtt_listen on the RaspberryPi Shell, and the result was thet whenever we pressed or released the button attached to the ESP32, the shell would print a message.
 
 ### How to begin
@@ -189,15 +191,19 @@ After that, we used mqtt_listen on the RaspberryPi Shell, and the result was the
 8. Use mqtt_listen on Raspberry Pi shell
 
 ### Simulation Flow
-Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/)
+Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/first-node/flow.txt)
 
 ### Pictures
-Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise05/)
+Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise05/first-node/)
+
+<img src="../../pictures/exercise05/first-node/First_Node.png" width="auto" />
 
 ## Second Node
 In this activity, we need to create a new node (folder), modify the node.conf file to make it simulate a button.
 
 After that, we wire the button to the Wemos D1 and create a flow to make it toggle the BUILTIN LED in the ESP32.
+
+In order to do the flow, we first add a mqtt_in to read the topic "thebests2/b1" and be able to know wheter the button is pressed or not, then depending on its state, we change the payload to on or off and send it to the topic "thebests2/blue/set".
 
 The result is that whenever we press the Wemos D1 wired button, the BUILTIN LED on the ESP32 turns on or off.
 
@@ -211,15 +217,17 @@ The result is that whenever we press the Wemos D1 wired button, the BUILTIN LED 
 6. Check if it works
 
 ### Simulation Flow
-Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/)
+Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/second-node/flow.txt)
 
 ### Pictures
 Here you can find a pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise05/second-node/)
 
+<img src="../../pictures/exercise05/second-node/second.png" width="auto" />
+
 ## Button to sound and notification
 In this activity, we create a physical button device that uses MQTT and make it play a sound and show a notification in the Node-RED dashboard.
 
-We modified the last node-red flow we made, and added a audio out node.
+We modified the last node-red flow we made for the second-node and an audio out node.
 
 ### How to begin
 
@@ -232,12 +240,16 @@ Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercis
 ### Pictures
 Here you can find a pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise05/button-to-sound/)
 
+<img src="../../pictures/exercise05/button-to-sound/sound.png" width="auto" />
+
 ## Text receiver
 We used a OLED I2C display and implemented an MQTT text reciver. To do that, we connected the OLED I2C shield to the Wemos D1. 
 
 After that, we modified the node.conf to implement the display command and deployed the new code to the Wemos D1. 
 
 Then we created a new node-red flow that allows you to write down in a text input box and sends the message to the Wemos D1. 
+
+To create this we modified the flow we used for the first-node and added an mqtt_out on the topic "thebests/oled"
 
 The result is that whenever you enter a message on the input field of the dashboard and press the enter button on the keyboard, the same message displays on the OLED I2C display.
 
@@ -253,4 +265,7 @@ The result is that whenever you enter a message on the input field of the dashbo
 Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/text-receiver/flow.txt)
 
 ### Pictures
-Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise05/text-receiver/)
+Here you can find a picture -> [Pictures](/Teamfolder/Group1/pictures/exercise05/text-receiver/)
+
+<img src="../../pictures/exercise05/text-receiver/oled.png" width="auto" />
+

@@ -1,4 +1,5 @@
 # Reflections
+[Other Reflections](../README.md)
 
 ## Week 1
 
@@ -13,3 +14,10 @@ I have gained some knowledge on the barriers regarding the IoT world, as well as
 
 #### Lab reflection
 Lab has been a mess. Things were not properly set up, and since we are two groups working with the same hardware, we had to wait until the other group was done in order to start.
+
+
+You can find the codes of our activities on the Exercises Folder:
+[Codes](/Teamfolder/Group1/exercises/exercise05/README.md)
+
+You can find pictures of our activities on the Pictures Folder:
+[Pictures](/Teamfolder/Group1/pictures/exercise05/)

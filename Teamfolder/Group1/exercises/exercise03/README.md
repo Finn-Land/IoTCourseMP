@@ -1,5 +1,5 @@
 # Exercise 03
-For the first exercise we wrote three small Arduino programs.
+We did some activities regarding Mosquitto and MQTT.
 
 ## Overview
 1. [MQTT Basics](/Teamfolder/Group1/exercises/exercise03/README.md#mqtt-basics)

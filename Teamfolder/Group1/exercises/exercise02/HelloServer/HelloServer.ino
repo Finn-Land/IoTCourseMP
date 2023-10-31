@@ -1,84 +1,20 @@
-#include <WiFi.h>
-#include <WiFiClient.h>
-#include <WebServer.h>
-#include <ESPmDNS.h>
 
-const char* ssid = "iotempire-magnusperfectus";
-const char* password = "iotempire";
+#include <M5StickCPlus.h>
 
-WebServer server(80);
+/* After M5StickC is started or reset
+  the program in the setUp () function will be run, and this part will only be run once.
+  After M5StickCPlus is started or reset, the program in the setup() function will be executed, and this part will only be executed once. */
+void setup() {
+  // Initialize the M5StickCPlus object. Initialize the M5StickCPlus object
+  M5.begin();
 
-const int led = 2;
-
-void handleRoot() {
-  //digitalWrite(led, 1);
-  server.send(200, "text/plain", "hello from esp32!");
-  //digitalWrite(led, 0);
+  // LCD display. LCd display
+  M5.Lcd.print("Hello World yey :D");
 }
 
-void handleNotFound() {
-  digitalWrite(led, 1);
-  String message = "File Not Found\n\n";
-  message += "URI: ";
-  message += server.uri();
-  message += "\nMethod: ";
-  message += (server.method() == HTTP_GET) ? "GET" : "POST";
-  message += "\nArguments: ";
-  message += server.args();
-  message += "\n";
-  for (uint8_t i = 0; i < server.args(); i++) {
-    message += " " + server.argName(i) + ": " + server.arg(i) + "\n";
-  }
-  server.send(404, "text/plain", message);
-  digitalWrite(led, 0);
-}
-
-void setup(void) {
-  pinMode(led, OUTPUT);
-  digitalWrite(led, 0);
-  Serial.begin(115200);
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(ssid, password);
-  Serial.println("");
-
-  // Wait for connection
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("");
-  Serial.print("Connected to ");
-  Serial.println(ssid);
-  Serial.print("IP address: ");
-  Serial.println(WiFi.localIP());
-
-  if (MDNS.begin("esp32")) {
-    Serial.println("MDNS responder started");
-  }
-
-  server.on("/", handleRoot);
-
-  server.on("/on", [](){
-    digitalWrite(led, HIGH);
-    server.send(200, "text/plain", "LED ON");
-  });
-
-  server.on("/off", [](){
-    digitalWrite(led, LOW);
-    server.send(200, "text/plain", "LED OFF");
-  });
-
-  server.on("/inline", []() {
-    server.send(200, "text/plain", "this works as well");
-  });
-
-  server.onNotFound(handleNotFound);
-
-  server.begin();
-  Serial.println("HTTP server started");
-}
-
-void loop(void) {
-  server.handleClient();
-  delay(2);//allow the cpu to switch to other tasks
+/* After the program in setup() runs, it runs the program in loop()
+  The loop() function is an infinite loop in which the program runs repeatedly
+  After the program in the setup() function is executed, the program in the loop() function will be executed
+  The loop() function is an endless loop, in which the program will continue to run repeatedly */
+void loop() {
 }

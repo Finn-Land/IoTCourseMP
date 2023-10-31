@@ -1,4 +1,5 @@
 # Research records 06
+[Other Researches](../README.md)
 
 ## Contents
 1. [IoT Project](#iot-project)
