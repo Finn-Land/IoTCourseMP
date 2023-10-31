@@ -8,8 +8,12 @@ When we went back in we discussed some more, and then we got a guest lecture fro
 
 ### Lab reflection
 
-There was no real lab to do this day. I mainly worked on the project.
 
+#### Touch sensor
+
+#### Moisture sensor
+
+#### Project work
 I worked on the alarm module. So we have an ESP32 that has an RGB LED and a buzzer. This ESP32 connects to WiFi, to MQTT and then communicates using Node-Red. The RGB LED can be changed using the topics for every RGB value. Topis that we use are: 
 
     magnusp/rgb/red

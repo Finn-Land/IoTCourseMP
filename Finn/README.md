@@ -39,7 +39,6 @@
 ## Eigth day
 [Reflection](/Finn/Reflections/reflection08/README.md)
 
-
 ## Ninth day
 [Reflection](/Finn/Reflections/reflection09/README.md)
 

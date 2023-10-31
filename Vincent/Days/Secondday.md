@@ -51,11 +51,28 @@ helps devices to get faster results by processing the data simultaneously receiv
 Together they make the following map:
 ![Map of IOT](../Photos/Map_Iot_Naming.png)
 
+## Exchange Formats
+
+There are a lot of ways IoT can format data. The ways they can is via protocols. The most famous formats are:
+
+- Text
+    - Text-based formats like plain text or CSV are generally not very suitable for IoT applications because they lack a standardized structure and are less efficient in terms of data size. IoT applications often involve large volumes of data, and text-based formats can result in excessive data transmission and storage costs. Additionally, parsing and processing text data can be slower compared to more structured formats like XML, JSON, or binary formats.
+- XML (Extensible Markup Language)
+    - XML is a flexible, human-readable format suitable for IoT in some cases. However, it has a relatively high overhead due to its verbose nature. This can lead to increased data transmission and storage requirements, which might be a concern for resource-constrained IoT devices or applications that require low-latency communication.
+- JSON (JavaScript Object Notation)
+    - JSON is widely used in IoT applications because of its lightweight and easy-to-parse structure. It strikes a balance between human-readability and efficiency. JSON is well-suited for IoT devices and applications where data interchange needs to be fast and efficient. However, it might not be the best choice for extremely resource-constrained
+- Yaml (Yet Another Markup Language)
+    - YAML is similar to JSON in terms of structure but is considered more human-readable and has some advantages in terms of configurability. However, like JSON, YAML is a text-based format, and it suffers from the same potential drawbacks in resource-constrained IoT scenarios, as it can be less efficient than binary formats.
+- Binary
+    - Binary formats are highly efficient in terms of data size and parsing speed. They are suitable for IoT applications where data needs to be transmitted quickly and with minimal overhead. Binary formats are particularly advantageous for resource-constrained IoT devices that have limited processing power, memory, or network bandwidth.
+
+These are the most common ways to format data
+
 
 # Challenge pre challenge 3
 
-Before we could make the challenge as describe in page 3, we needed to make our own network. 
-Because of my expierence with infrastructure i led my other teammates do the work.
+Before we could make the challenge as describe in page 3, we needed to make our own network. So we can use different things that are installed on the PI.
+Because of my expierence with infrastructure I led my other teammates do the work.
 To complete this challenge the following things needed to be done:
 - Open the Pi 400
 - Flash the SD card
@@ -67,6 +84,13 @@ To complete this challenge the following things needed to be done:
 - Power on the Pi 400
 
 This were the steps we as group did, to get the correct result.
+
+This router/Pi have the following functions that we are going to use:
+
+- IOTempire
+- MQTT (mosqitto)
+- Node-Red 
+
 
 
 # challenge 3
