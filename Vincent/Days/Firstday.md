@@ -1,3 +1,11 @@
+# Who am I?
+
+My name is Vincent van Werkhoven and I am 22 years old. 
+Currently I study IT in Fontys in Tilburg in the Netherlands
+Im currently doing the minor: Global Acting in IT.
+
+I know a bit about IoT because I do it alot in my free time. Futhermore I really enjoy doing it.
+
 # What is IoT?
 
 IoT stands for Internet of Things, and it applies to small computers and board that can do mostly one task, but some can do multiple tasks. It revolves around the following things for example:
@@ -6,6 +14,8 @@ IoT stands for Internet of Things, and it applies to small computers and board t
 - Arduino
 - ESP
 - Orange
+
+From the **video's** (the Bosch and the Ulrich videos) that we watched I got the following information:
 
 IoT is everywhere. There are a lot of domains and implications for IoT. 3 big domains that IoT is being used a lot are the following domains:
 
@@ -54,6 +64,27 @@ Another challenge is ethics. Do we really want to live in a world where there is
 Another big challenge is privacy. With the internet being so big, what privacy can we still have. Do we even have privacy, our is that something from the past. What kind of data does a IoT device need, and the data that de IoT device needs, how do we know how they use that data?  Companies want to have data, and they are willing to do not ethics thing to get that data. These are another ethics questions that needs to be answered as soon as possible. 
 
 All these things combine creates what IoT is, and what it is being used for and how its interpretation within our world and within some communities. But we don’t need to forget that IoT cant solve everything. Like a famous quote: “If the only tool you have is a hammer, you tend to see every problem as a nail”. This extents to IoT.  And the risks that IoT still comes with, is something else we need to think about, and quickly as possible.
+
+# The Kit
+
+We, as a group got the following kit:
+
+[The kit checklist](../UT-CS-IoT-Kit%20Parts%20Discovery%20List.xlsx)
+
+# The device we are going to use:
+In the device that we are going to use are:
+
+- Wemos D1 mini 
+
+It looks as followed:
+![Alt text](image-19.png)
+The Wemos D1 Mini is a compact development board based on the ESP8266 microcontroller. It offers built-in Wi-Fi connectivity and is compatible with the Arduino IDE, making it easy to create IoT projects. The D1 Mini features a USB interface, GPIO pins, and various add-on modules, making it a convenient and versatile choice for IoT prototyping.
+
+- ESP8266
+
+It looks as followed: 
+![Alt text](D1_MINI_01_NEU.png)
+The ESP8266 is a popular low-cost, Wi-Fi-enabled microcontroller module. It's widely used for IoT (Internet of Things) projects, offering wireless connectivity and a small form factor. It's based on the Espressif Systems' ESP8266 SoC (System on a Chip) and can be programmed to perform various tasks, such as connecting devices to the internet or creating smart home solutions. It's a versatile and affordable option for IoT development.
 
 # challenges 
 
@@ -205,6 +236,22 @@ Proof that we made this is here:
 ![Challenge D, part one](../Photos/Debouncing_setup.png)
 Futhermore there will be a video in the ZIP with more prove that we did the challenge. 
 
+# Answering some questions:
+Ulrich wanted me to answer some questions. The questions are:
+
+● How are programs saved and run on the Wemos D1 Mini/ESP32 – how many at once?
+It can only run one program at the time. The programs are saved in the onboard ram/memory of the device. 
+
+● What did I miss in video?
+
+● Which voltage are we usually using?
+3.3V
+● What means High and what means Low?
+High means there is voltage on it, low means there is no voltage
+● Where do you look easiest for examples for your solutions?
+In the example tab in the Arduino IDE
+● What is special about the onboard led on the Wemos D1 Mini?
+It can change colour and is on board. 
 
 ## Feedback/reflection
 
@@ -215,3 +262,5 @@ Futhermore I don't think it's fair to talk about something as strange as debounc
 My feedback would fall that the teachers just start at the start, and go a bit more slowly through the module, because if this is the rythme for the whole module, it's going to be difficult be keep up.
 
 BUT, with the feedback I gave, I want to adress that the way they teach is good, and interessing. So that's something I truely want to address. 
+
+I helped today Stefan with his project. So he know how the ESP even worked and how we needed to communicate with it. 

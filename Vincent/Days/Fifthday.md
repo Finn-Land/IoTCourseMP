@@ -10,6 +10,26 @@
 - What role will play simulator (-component)s, MQTT and stories
     - Simulating the hardware is a good way to test surten things. I simulate Node-Red for example and it's really handy to simulate it, because my laptop has enough power right now to work. So I could simulate other things as well.
 
+# What is IoTempire?
+
+IoTempire is a framework and environment for making the Internet of Things (IoT) accessible for everyone. It is designed to empower tinkerers, makers, programmers, hobbyists, students, artists, and professionals alike to explore and develop for the IoT.
+
+IoTempire provides a number of features that make it easy to get started with IoT development, including:
+
+    A library of pre-built IoT components, such as sensors, actuators, and communication modules
+    A visual programming environment that allows users to create IoT applications without writing any code
+    A cloud-based platform for managing and deploying IoT applications
+
+IoTempire is also open source, so it is freely available to use and modify.
+
+Here are some examples of what you can do with IoTempire:
+
+    Build a smart home system that controls your lights, thermostat, and other devices
+    Develop an IoT-based weather station that collects and reports data on temperature, humidity, and other weather conditions
+    Create a wearable device that tracks your fitness activity and health data
+    Build a prototype for a new IoT-enabled product or service
+
+IoTempire is a powerful and versatile platform for IoT development. It is a great choice for anyone who wants to get started with IoT, regardless of their experience level.
 
 # Challenge 1
 
