@@ -211,6 +211,7 @@ The result is that whenever we press the Wemos D1 wired button, the BUILTIN LED 
 6. Check if it works
 
 ### Simulation Flow
+![Flow](image.png)
 Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/)
 
 ### Pictures
@@ -227,6 +228,7 @@ We modified the last node-red flow we made, and added a audio out node.
 2. Edit the node-red flow to add an audio out.
 
 ### Simulation Flow
+![Alt text](image-1.png)
 Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/button-to-sound/buttonToAudio.txt)
 
 ### Pictures
@@ -250,6 +252,9 @@ The result is that whenever you enter a message on the input field of the dashbo
 5. Try if it works
 
 ### Simulation Flow
+![Flow](image-2.png)
+![Dashbaord](image-3.png)
+
 Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise05/text-receiver/flow.txt)
 
 ### Pictures

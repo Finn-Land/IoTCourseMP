@@ -32,6 +32,7 @@ We then created a Node-Red flow wit an mqtt_in on the topic /RFID_FJJ/reader/#. 
 6. Check if it works
 
 ### Simulation Flow
+![Flow](image.png)
 Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise06/)
 
 ### Pictures
@@ -58,6 +59,8 @@ At the end, we managed to finish the activity and successfully created a slider 
 5. Create a node-red flow with a slider to control the brightness of the LED
 6. Check if it works
 
+![Flow](image-1.png)
+
 ## Access Control System -> New Actors -> 2
 For this activity we wired a Buzzer where the LED was to the Wemos D1. We also had to modify the node-red flow, adding another slider that changes the frequency sending the payload to the topic "PWM_FJJ/pwm/frequency/set".
 
@@ -69,6 +72,8 @@ The result is a Wemos D1 connected to a buzzer that can change it's intensity an
 2. Check if it works
 
 ### Simulation Flow
+![Flow](image-2.png)
+
 Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise06/)
 
 ### Pictures

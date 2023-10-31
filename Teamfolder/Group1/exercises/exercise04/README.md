@@ -53,6 +53,7 @@ We faced some problems like not being able to properly link the discord bot to n
 5. Check if it works properly
 
 ### Simulation Flow
+![Flow](image.png)
 Here you can find the compact JSON code to import the flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise04/emergency_button/Simulation-flow.txt)
 
 ### Code
@@ -72,6 +73,7 @@ In this activity, we had to trigger a real physical device by sending a message 
 4. Wait for the LED to toggle its state
 
 ### Simulation Flow
+![Flow](image-1.png)
 Here you can find the Node-red flow -> [Compact JSON](/Teamfolder/Group1/exercises/exercise04/remote-control/)
 
 ### Code
