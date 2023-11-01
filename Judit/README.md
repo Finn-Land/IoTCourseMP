@@ -53,17 +53,21 @@ My portfolio
 ## Eighth day
 - [Research records](/Judit/researches/research08/README.md)
 
-- [Lab records](/Teamfolder/Group1/exercises/exercise08/README.md)
+- [Lab records](/Teamfolder/Final%20Project/)
 
 - [Reflection](/Judit/reflections/reflection08/README.md)
 ## Ninth day
 - [Research records](/Judit/researches/research09/README.md)
 
-- [Lab records](/Teamfolder/Group1/exercises/exercise09/README.md)
+- [Lab records](/Teamfolder/Final%20Project/)
 
 - [Reflection](/Judit/reflections/reflection09/README.md)
 ## Tenth day
+- [Research records](/Judit/researches/research09/README.md)
 
+- [Lab records](/Teamfolder/Final%20Project/M5%20Stick%202/README.md)
+
+- [Reflection](/Judit/reflections/reflection09/README.md)
 ## Eleventh day
 
 ## Twelfth day

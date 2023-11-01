@@ -9,7 +9,6 @@ void setup() {
   // Initialize the M5StickCPlus object. Initialize the M5StickCPlus object
   M5.begin();
   M5.Lcd.setRotation(1);
-
 }
 
 void loop() {
