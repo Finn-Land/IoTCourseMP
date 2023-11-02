@@ -176,6 +176,10 @@ Start by accessing the router by using SSH, and run the following command:
 Should return something like the following:
 ![Alt text](image-15.png)
 
+The website of connected clients should look like this:
+
+![Alt text](image-19.png)
+
 4. Point your web browser to location https://edge.iot/clients/ and check if the connection is secure.
 
 

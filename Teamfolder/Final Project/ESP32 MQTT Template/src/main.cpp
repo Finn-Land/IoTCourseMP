@@ -52,13 +52,16 @@ static void mqttCallback(char *topic, byte *message, unsigned int length)
   {
     esp32.setRGBLed({-1, -1, value.toInt()});
   }
-  else if (strcmp(topic, "magnusp/buzzer/on") == 0)
+  else if (strcmp(topic, "magnusp/buzzer") == 0)
   {
-    esp32.soundBuzzer("on");
-  }
-  else if (strcmp(topic, "magnusp/buzzer/off") == 0)
-  {
-    esp32.soundBuzzer("off");
+    if (value.toInt() == 1)
+    {
+      esp32.soundBuzzer("on");
+    }
+    else
+    {
+      esp32.soundBuzzer("off");
+    }
   }
   Serial.println();
 }
@@ -76,7 +79,6 @@ void loop()
   if (curTime - prevTime > 2000)
   {
     // Enter topic here and message here
-    esp32.sendMessage("topic", "hello");
     prevTime = curTime;
   }
 }
