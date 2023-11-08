@@ -2,6 +2,8 @@
 We did some Arduino and VS Code programs related with IoT.
 
 ## Overview
+1. [Persona and Scenraios](/Teamfolder/Group1/exercises/exercise02/README.md#persona-and-scenraios)
+1. [Terminology IoT](/Teamfolder/Group1/exercises/exercise02/README.md#terminology-iot)
 1. [Preparation](/Teamfolder/Group1/exercises/exercise02/README.md#preparation)
 2. [Control Led with Web Request](/Teamfolder/Group1/exercises/exercise02/README.md#control-led-with-web-request)
 	- [How to begin](/Teamfolder/Group1/exercises/exercise02/README.md#how-to-begin)
@@ -23,6 +25,16 @@ We did some Arduino and VS Code programs related with IoT.
 		- [How to begin](/Teamfolder/Group1/exercises/exercise02/README.md#how-to-begin-2)
 		- [Code](/Teamfolder/Group1/exercises/exercise02/README.md#code-4)
 	- [Pictures](/Teamfolder/Group1/exercises/exercise02/README.md#pictures-2)	
+
+## Persona and Scenraios
+
+Activity can be found here: [Persona and Scenearios](/Teamfolder/Group1/exercises/exercise02/Stories_Scenario/README.md)
+
+## Terminology IoT
+
+After that, we have researched about some terminology of IoT, and relationed different concepts.
+
+Activity can be found here: [Terminology IoT](/Teamfolder/Group1/exercises/exercise02/Terminology_IoT/README.md)
 
 ## Preparation
 Before we could start doing the first little example, we had to setup our Raspberry Pi.

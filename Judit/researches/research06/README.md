@@ -3,7 +3,12 @@
 
 ## Contents
 1. [IoT Project](#iot-project)
-2. [User Stories Updated](#user-stories-updated)
+2. [Random Quetions](#random-questions)
+    - [What are the generic steps (and command structure) for adding a new device in IoTempower?](#what-are-the-generic-steps-and-command-structure-for-adding-a-new-device-in-iotempower)
+    - [You already know how to install IoTempower through a pi image – what other ways of using/installing it are there?](#you-already-know-how-to-install-iotempower-through-a-pi-image-–-what-other-ways-of-usinginstalling-it-are-there)
+    - [Where and what are the tools/commands/scripts?](#where-and-what-are-the-toolscommandsscripts)
+    - [Where is documentation?](#where-is-documentation)
+    - [What is the role of the different folders in lib/node_types?](#what-is-the-role-of-the-different-folders-in-libnode_types)
 3. [System in folders](#system-in-folders)
     - [Which topic needs to be called with what to:](#which-topic-needs-to-be-called-with-what-to)
     - [What is the general rule for forming topics in IoTempower?](#what-is-the-general-rule-for-forming-topics-in-iotempower)
@@ -27,9 +32,34 @@ Fist thing we did today was discuss our IoT project with Ulrich.
 
 We ended up deciding to use a gyroscope in one hand and a deviced somehow like a smartwatch on the other. When doing a specific movement with the gyroscope, it sends a topic to someone else's watch, which vibrates and displays a message. After pressing a button on the watch, this sends a topic to the first person's watch and vibrates.
 
-## User Stories Updated
-After that, we created a new user scenario related with our project. To do that, I asked my teamates some questions about the idea we talked with Ulno, trying to make them think about details like "how does our user call a specific person" and "how does this really relate with our translating site". They were not able to answer me, so I just decided those answers on my own.
-Update stories
+## Random Questions
+### What are the generic steps (and command structure) for adding a new device in IoTempower?
+To add a new device in IoTempower we need to access the node desired, there we modify the setup.ccp. 
+
+In the setup.cpp, we need to write down the command linked to the device we want to add. To find the suitable command, we can go to the [Command Reference](https://github.com/iotempire/iotempower/blob/master/doc/node_help/commands.rst).
+
+Some examples:
+
+	mfrc522(reader);
+
+    pwm(name, pin, frequency=1000);
+
+    rgb_single(name, pin_r, pin_g, pin_b, invert=false);
+
+### You already know how to install IoTempower through a pi image – what other ways of using/installing it are there?
+It can be installed on a Linux or WSL. This can be done by cloning the git repository.
+
+### Where and what are the tools/commands/scripts?
+Can be found in the [Command Reference](https://github.com/iotempire/iotempower/blob/master/doc/node_help/commands.rst).
+
+It is the way to address the different devices.
+
+### Where is documentation?
+In the [Documentation](https://github.com/iotempire/iotempower/blob/master/doc/index-doc.rst).
+
+
+### What is the role of the different folders in lib/node_types?
+It is an inheritance design. This means that a new node inside the first node will inherite properties and behaviors from all the nodes above. 
 
 ## System in folders
 ### Which topic needs to be called with what to:

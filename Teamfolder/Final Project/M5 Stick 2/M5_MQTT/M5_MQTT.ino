@@ -8,11 +8,12 @@ const char* mqtt_server = "192.168.12.1";
 const char* mqtt_topic = "magnusp/LCD";
 
 unsigned long previous_time = 0;
-int period = 2000;
+int period = 1000;
 int color[] = {0xfd79, 0xe8e4, 0xfbe4, 0xff80, 0x2589, 0x51d, 0x3a59, 0xa254, 0x7bef, 0xffff};
 int currentColor = 0;
 bool shouldChangeColor = true;
 bool isIncomingCall = false;
+bool isBeeping = false;
 
 WiFiClient espClient;
 PubSubClient client(espClient);
@@ -39,9 +40,15 @@ void loop() {
   if (isIncomingCall) {
     M5.Lcd.setTextFont(2);
     M5.Lcd.setTextSize(2);
-    M5.Lcd.setTextColor(TFT_WHITE,TFT_BLACK);
+    M5.Lcd.setTextColor(TFT_WHITE, TFT_BLACK);
     M5.Lcd.setCursor(20, 100);
     M5.Lcd.print("Incoming call");
+  }
+  if (isBeeping) {
+    M5.Beep.tone(5000, 1500);
+    M5.Beep.beep();
+  } else {
+    M5.Beep.mute();
   }
 }
 
@@ -68,11 +75,13 @@ void callback(char* topic, byte* payload, unsigned int length) {
   int messageValue = message.toInt();
   if (messageValue == 0) {
     shouldChangeColor = false;
-    M5.Lcd.fillScreen(TFT_BLACK);
+    M5.Lcd.fillScreen(TFT_WHITE);
     isIncomingCall = false;
+    isBeeping = false;
   } else if (messageValue == 1) {
     shouldChangeColor = true;
     isIncomingCall = true;
+    isBeeping = true;
   }
 }
 

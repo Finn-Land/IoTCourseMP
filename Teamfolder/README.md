@@ -3,5 +3,6 @@ Repo for the IoT course, groupname: Magnus Perfectus
 
 ## Group1
 [Group1](Group1/README.md)
-## Group2
-[Group2](Group2/README.md)
+## Team Project
+[Project](./Final%20Project/README.md)
+

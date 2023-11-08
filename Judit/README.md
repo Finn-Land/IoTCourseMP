@@ -63,15 +63,20 @@ My portfolio
 
 - [Reflection](/Judit/reflections/reflection09/README.md)
 ## Tenth day
-- [Research records](/Judit/researches/research09/README.md)
+- [Research records](/Judit/researches/research10/README.md)
 
 - [Lab records](/Teamfolder/Final%20Project/M5%20Stick%202/README.md)
 
-- [Reflection](/Judit/reflections/reflection09/README.md)
+- [Reflection](/Judit/reflections/reflection10/README.md)
 ## Eleventh day
+- [Research records](/Judit/researches/research11/README.md)
 
-## Twelfth day
+- [Lab records](/Teamfolder/Final%20Project/M5%20Stick%202/README.md#final-adjustments)
+
+- [Reflection](/Judit/reflections/reflection11/README.md)
+
+## Last day
+- [Last Day](/Judit/lastday/README.md)
 
 ## Additional things
-
-## Ranking for the videos
+- [Additional Things](/Judit/additionalThings/README.md)

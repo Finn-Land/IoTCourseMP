@@ -26,6 +26,13 @@ https://docs.m5stack.com/en/quick_start/m5stickc_plus/arduino
         - [M5 MQTT](#m5-mqtt)
             - [Final Code](#final-code)
             - [Pictures](#pictures-1)
+4. [Final Adjustments](#final-adjustments)
+    - [Steps](#steps)
+    - [Node-red Flow](#node-red-flow)
+        - [Simulation Flow](#simulation-flow)
+        - [Pictures](#pictures-2)
+    - [Beep Feature](#beep-feature)
+
 
 ## Setting up
 ### Device Drivers
@@ -231,7 +238,7 @@ This flow is just two injects (on injects a 0 and the other a 1) to simulate a m
 
 <img src="./Pictures/mqtt/Flow.png"/>
 
-You can find the compact flow here: [Flow](./M5_MQTT/flow.txt)
+You can find the compact flow here: [Flow](./M5_MQTT/old%20flow/flow.txt)
 
 ### Codes
 
@@ -407,3 +414,92 @@ With this, we successfully solved all our requierments.
 ##### Pictures
 
 **Videos** can be found here: [Videos](./Pictures/mqtt/)
+
+## Final Adjustments
+The day before the presentation of the project, we worked on some adjustments for both the M5 and the node-red flow.
+
+### Steps
+1. Modify the node-red to change in depending of the button pressed.
+2. Adding a beep to the case 1.
+
+### Node-red Flow
+First, on node-red, we created two buttons:
+- one to send a '0', to turn off (No call)
+- another to send '1', to turn on. (Call)
+
+Both buttons, when pressed, set the payload to either "True" or "False". Then we pass both payloads to a switch, and depending of the state of the bool (true/false) it leads to a node "change" that modifies the payload and the label to either 0 or 1, and then it connects with the mqtt_out on the topic "magnusp/LCD".
+
+<img src="./Pictures/Dashboard/m5/1st.png"/>
+
+Following the two nodes "change" in every outcome, we can find another node "change" that modifies the payload and the label for the text to display:
+- Case 0: state false:
+    - Payload to "No calls"
+    - label to an icon of a black square
+        
+            <i class="fa fa-square" aria-hidden="true"></i>
+
+    <img src="./Pictures/Dashboard/m5/change0.png"/>
+
+- Case 1: state true:
+    - Payload to "Incoming Call"
+    - label to an icon of a black square with a white phone
+
+            <i class="fa fa-phone-square" aria-hidden="true"></i>
+
+    <img src="./Pictures/Dashboard/m5/change1.png"/>
+    
+The full node-red flow looks as it follows:
+
+<img src="./Pictures/Dashboard/m5/m5 node red.png"/>
+
+And so does the dashboard:
+
+<img src="./Pictures/Dashboard/m5/m5dashboard.png"/>
+
+In it, if we press the green button, labeled call, a message is sent to the M5 to run the code changing colors and displaying the message. Additionaly, the text changes to an icon of a phone and a message of "Incoming call"
+
+When the red button, labeled no call, is pressed, the m5 screen goes black, and the dashboard text appears as seen in the image above.
+
+#### Simulation Flow
+Simulation flow can be found here: [Flow](./M5_MQTT/flows.json)
+
+#### Pictures
+Pictures can be found here: [Pictures](./Pictures/Dashboard/m5/)
+
+### Beep Feature
+Ulno suggested we should add a beeping feature to our M5, so we did so.
+
+We encountered some problems figuring out the command to do so, but after some research we discoverd it was as simple as doing:
+
+    M5.Beep()
+
+Once we had that, we created a new bool, named "isBeeping", to knwo when the beep should beep.
+
+    bool isBeeping = false;
+
+To decide so, we went to the callback function. Once there, we modified the IF. When the value from the topic is '0', we set the bool "isBeeping" to "false", wherever it is '1' we set it to "true."
+
+    if (messageValue == 0) {
+        shouldChangeColor = false;
+        M5.Lcd.fillScreen(TFT_WHITE);
+        isIncomingCall = false;
+        isBeeping = false;
+    } else if (messageValue == 1) {
+        shouldChangeColor = true;
+        isIncomingCall = true;
+        isBeeping = true;
+    }
+
+Once this is done, we modify the void loop. In it, we add an IF and it's ELSE. When the bool "isBeeping" is "true", we set a tone and make it beep. When it is "flase", we mute the beep.
+
+    if (isBeeping) {
+        M5.Beep.tone(5000, 1500);
+        M5.Beep.beep();
+    } else {
+        M5.Beep.mute();
+    }
+
+***NOTE:** This changes are in the same file that the previous code.*
+
+**File** can be found here: [Code](./M5_MQTT/M5_MQTT.ino)
+

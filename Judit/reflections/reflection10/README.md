@@ -15,7 +15,7 @@ More content related with the research in:
 Once again, I did not enjoy the class. In fact, I felt overwhelmed by the amount of information and the lack of clear explanations.
 
 #### Lab reflection
-Today's lab has been so far the most exicietin one. 
+Today's lab has been so far the most exciting one. 
 
 Stefan and I worked together on the other M5 Stick C Plus. We had a really easy assignment (at least at the begining):
 

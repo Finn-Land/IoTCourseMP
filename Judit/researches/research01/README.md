@@ -53,6 +53,7 @@ Understanding the basics and being able to implement the knowledge gained though
 
 
 ## IoT
+***NOTE** The answers to the questions have been expanded after seeing the video from BOSCH and TIA.*
 
 ### What does Internet of Things entail?
 Refers to the intercommunication of everyday objects, devices, and appliances to the internet, which allows them to exchange data.
@@ -105,6 +106,9 @@ Refers to the intercommunication of everyday objects, devices, and appliances to
 ## Some Knowledge
 
 ### Git
+Finn has created the repository for the group, and I followed the one given as example to do my folder.
+
+I wanted to follow the template as much as possible, since I think it is a good way of having everything organized.
 
 #### Updating the local repository
 >1. Open cmd
