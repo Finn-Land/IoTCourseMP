@@ -23,6 +23,11 @@ More information about the activity is documented on Cristina's portfolio:
 
 [Analog Touch Sensor](https://github.com/FlorianRakos/IoT-NotCapricorns/blob/main/TeamThree/Ulrichs%20Lab%20Tasks.md#7b-analog-touch-sensor)
 
+## Moisture Sensor
+Once again, I teamed with Cristina to do this activity.
+
+More information about the activity is documented on Cristina's portfolio:
+
 [Moisture Sensor](https://github.com/FlorianRakos/IoT-NotCapricorns/blob/main/TeamThree/Ulrichs%20Lab%20Tasks.md#7c-moisture-sensor) 
 
 ## Lab
