@@ -65,6 +65,8 @@ Pictures and videos can be found in teh following folder:
 <img src="../../pictures/exercise02/HelloServer/HTTPSerialMonitor.png" width="550" height="auto"/>
 <img src="../../pictures/exercise02/HelloServer/browserScreenshot.png" width="550" height="auto"/>
 
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/94c7bc60-ea1e-456d-b0e1-dcf8f8701159
+
 ## Use a Button to Create Web Request Step 1
 In this project we use 2 ESP32, one as a server and one as a client, to change the state of the builtin led. We did this by using an HTTP GET request to the server that triggered the server code to turn on the builtin LED.
 
@@ -83,11 +85,13 @@ Here you can find the code for the client -> [BasicHttpClient.ino](/Teamfolder/G
 
 ### Pictures
 Pictures and videos can be found in teh following folder:
-[Pictures](/Teamfolder/Group1/pictures/exercise02/)
+[Pictures](/Teamfolder/Group1/pictures/exercise02/BasicHttpClient/)
 
 <img src="../../pictures/exercise02/BasicHttpClient/ledONOFFWS.png" width="550" height="auto"/>
 <img src="../../pictures/exercise02/BasicHttpClient/request pending.jpg" width="550" height="auto"/>
 <img src="../../pictures/exercise02/BasicHttpClient/requested.jpg" width="550" height="auto"/>
+
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/7bb4ab72-375b-466c-b9dc-712c82f6fb62
 
 ### Server
 
@@ -123,3 +127,5 @@ Here you can find the code -> [HelloServer.ino](/Teamfolder/Group1/exercises/exe
 ### Pictures
 Pictures and videos can be found in teh following folder:
 [Pictures](/Teamfolder/Group1/pictures/exercise02/ButtonHttpClient/)
+
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/48afb0b9-8a12-4496-8dff-6fb0f5ebdcfb
