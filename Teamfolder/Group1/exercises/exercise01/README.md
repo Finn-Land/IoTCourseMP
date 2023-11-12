@@ -64,6 +64,8 @@ Pictures and videos can be found in teh following folder:
 
 <img src="../../pictures/exercise01/builtinLedBlink/blink.jpg" width="300px"/>
 
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/dd48798f-ab2a-43fe-bc68-9dfc6569d8a2
+
 ## Toggle Led With Button
 In this little project we wanted to make a toggle button that changed the state of the leds.
 
@@ -85,6 +87,8 @@ Pictures and videos can be found in teh following folder:
 <img src="../../pictures/exercise01/buttonToggle/Button process 1.jpg" width="300px"/>
 <img src="../../pictures/exercise01/buttonToggle/Button process 2.jpg" width="300px"/>
 
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/a4eb45b1-6517-47f6-98ec-aef7bd731048
+
 ## Extra: Switch Led With Button
 In this little project we wanted to make a toggle button that changed the led that was on.
 
@@ -105,3 +109,5 @@ Pictures and videos can be found in teh following folder:
 
 <img src="../../pictures/exercise01/buttonLED/Switch button HIGH.jpg" width="300px"/>
 <img src="../../pictures/exercise01/buttonLED/Switch button LOW.jpg" width="300px"/>
+
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/26a199af-c632-4ad6-b98d-79042ebe2cf8
