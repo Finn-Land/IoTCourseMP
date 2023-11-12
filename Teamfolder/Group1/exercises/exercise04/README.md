@@ -63,6 +63,8 @@ Here you can find some pictures -> [Pictures](/Teamfolder/Group1/pictures/exerci
 
 <img src="../../pictures/exercise04/emergency-button/emergency-button.png" widht="auto" />
 
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/8bc470b2-e0d4-491d-935c-7b663069a6e0
+
 ## Remote Control an Internal Device
 In this activity, we had to trigger a real physical device by sending a message on the discord server. In order to do that, we created a flow in Node-red that uses the bot previously created to to read the #sandbox channel. If the bot reads a certain message, it publishes on the topic a text that triggers the ESP32 to turn on or off the LED.
 
@@ -79,3 +81,5 @@ Here you can find the Node-red flow -> [Compact JSON](/Teamfolder/Group1/exercis
 Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise04/remote-control/)
 
 <img src="../../pictures/exercise04/remote-control/remote-control.png" widht="auto" />
+
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/287c1e8c-e445-485d-98ae-7df1d01a79f0
