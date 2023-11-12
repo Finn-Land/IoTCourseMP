@@ -132,7 +132,6 @@ Then, we edited the loop. We createde a FOR to iterate thought the whole array. 
 
 <img src="./Pictures/other_codes/other.jpg"/>
 
-
 ### Second Code
 
 Our teammate Finn suggested that we should not use the delay, and insted he suggested using "Milles()", se we went ahead and googled it up.
@@ -179,6 +178,8 @@ So the void loop looks like this:
         }
     }
 
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/951f3970-c8bd-498a-983f-d48f8059faff
+
 ### Fourth Code
 For this, Stefan suggested to put some text in it, something like an "incoming call" message.
 
@@ -213,6 +214,8 @@ Also, we added a line on the setup to rotate the position of the LCD pannel.
 Now our text appears horizontally in the screen.
 
 <img src="./Pictures/fourth_code/fourth.jpg"/>
+
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/49a33bdf-6a6c-4c50-8b86-3eee0554cfc9
 
 #### Code
 The full code can be found here: [Code](./M5_2/M5_2.ino)
@@ -406,6 +409,8 @@ To modify the value of the bool, we set it on the callback funtion:
 In here, whenever the injected value is '0', we set the bool "isIncomingCall" to "false". And whenever the injected value is '1', we set it to "true".
 
 With this, we successfully solved all our requierments.
+
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/c5701268-94ce-4ad3-acad-517f01af377d
 
 ##### Final Code
 
