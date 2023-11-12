@@ -224,6 +224,8 @@ Here you can find a pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise0
 
 <img src="../../pictures/exercise05/second-node/second.png" width="auto" />
 
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/97dc0ff0-7bfe-4774-9d31-8d64c7857931
+
 ## Button to sound and notification
 In this activity, we create a physical button device that uses MQTT and make it play a sound and show a notification in the Node-RED dashboard.
 
@@ -241,6 +243,8 @@ Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercis
 Here you can find a pictures -> [Pictures](/Teamfolder/Group1/pictures/exercise05/button-to-sound/)
 
 <img src="../../pictures/exercise05/button-to-sound/sound.png" width="auto" />
+
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/596b5111-bf89-4188-adaa-15ecc3c2a332
 
 ## Text receiver
 We used a OLED I2C display and implemented an MQTT text reciver. To do that, we connected the OLED I2C shield to the Wemos D1. 
@@ -268,4 +272,7 @@ Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercis
 Here you can find a picture -> [Pictures](/Teamfolder/Group1/pictures/exercise05/text-receiver/)
 
 <img src="../../pictures/exercise05/text-receiver/oled.png" width="auto" />
+
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/b889c2de-dd4d-49db-b84b-43006bcfc558
+
 
