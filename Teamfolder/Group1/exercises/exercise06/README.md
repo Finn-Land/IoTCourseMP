@@ -53,6 +53,7 @@ Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercis
 ### Pictures
 Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise06/RFID%20Reader/)
 
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/1d34f637-fa6e-4a54-8a19-d06037858f50
 
 ## Access Control System -> New Actors -> 1
 For this activity we wired a LED with a resistor to the Wemos D1. After that, created a new node called "PWM_FJJ". Once there, we adjusted the setup.cpp to use PWM on the pin with the following code:
@@ -80,6 +81,8 @@ Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercis
 ### Pictures
 Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise06/LED/)
 
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/22f1ad4b-bc92-4f49-b3ab-e4a0556db5bb
+
 ## Access Control System -> New Actors -> 2
 For this activity we wired a Buzzer where the LED was to the Wemos D1. We also had to modify the node-red flow, adding another slider that changes the frequency sending the payload to the topic "PWM_FJJ/pwm/frequency/set".
 
@@ -95,6 +98,8 @@ Here you can find the node-red flow -> [Compact JSON](/Teamfolder/Group1/exercis
 
 ### Pictures
 Here you can find a picture -> [Picture](/Teamfolder/Group1/pictures/exercise06/BUZZER)
+
+https://github.com/Finn-Land/IoTCourseMP/assets/113583945/ea5c124c-4ee5-4e70-8245-f73f1f64eb8e
 
 ## Project
 Information about the project can be found in:
