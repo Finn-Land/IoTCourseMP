@@ -41,9 +41,3 @@
 
 ## Ninth day
 [Reflection](/Finn/Reflections/reflection09/README.md)
-
-## Tenth day
-
-## Eleventh day
-
-## Twelfth day

@@ -160,5 +160,5 @@ You can find them using:
 
     nano /etc/opkg/distfeeds.conf
 
-The final group assignment was documented in Vincent's folder:
-[Final assignment](/Vincent/Days/Ninthday/README.md)
+The final group assignment (project) can be found in the team folder:
+[Final assignment](/Teamfolder/Final%20Project/README.md)
