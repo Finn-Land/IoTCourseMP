@@ -1,0 +1,30 @@
+@startuml
+actor Container as con
+left to right direction
+
+@startuml Class diagram
+class ESP32_Imp {
+    +wifiClient : WiFiClient;
+    +mqttClient : PubSubClient;
+    +DHT : dht;
+    +curTime : unsigned long;
+    +prevTime : unsigned long;
+    +ESP32_Imp();
+    +connect() override : virtual void;
+    +setupMQTT() override : virtual void;
+    +reconnect() override : virtual void; 
+    +sendMessage() override : virtual void; 
+    +readAndSendData() override : virtual void; 
+}
+interface ESP32interface {
+    +connect() = 0  : virtual void;
+    +setupMQTT() = 0 : virtual void;
+    +reconnect() = 0 : virtual void;
+    +sendMessage() = 0 : virtual void;
+}
+
+
+
+ESP32interface *-- ESP32_Imp
+@enduml
+@enduml

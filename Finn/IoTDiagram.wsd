@@ -1,0 +1,25 @@
+@startuml
+
+legend Top
+    |Color| Component |
+    |<#LightSeaGreen>| Access Control System|
+    |<#MediumSeaGreen>| Gyroscope functionality|
+    |<#FireBrick>| Cloud (Node-Red)|
+endlegend
+
+[RFID Reader] #LightSeaGreen
+[Alarm System] #LightSeaGreen
+[OLED Screen] #LightSeaGreen
+[Gyroscope M5] #MediumSeaGreen
+[Incoming call M5] #MediumSeaGreen
+cloud {
+    [MQTT] #FireBrick
+}
+
+[RFID Reader] -[#LightSeaGreen]-> [MQTT] : Tag UID
+[MQTT] -[#LightSeaGreen]-> [OLED Screen] : Access granted / \n Access Denied
+[MQTT] -[#LightSeaGreen]-> [Alarm System] : RGB Values / \n Buzzer Setting
+[Gyroscope M5] -[#MediumSeaGreen]-> [MQTT] : Correct Motion
+[MQTT] -[#MediumSeaGreen]-> [Incoming call M5] : Request Call
+
+@enduml
